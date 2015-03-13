@@ -1,11 +1,17 @@
-#drupalmaster2014.local
+#morocutti.at
 ##logfile
 
 Development base: drupalmaster2014.local  
 Drupal version: 7  
 Theme: Zen 6.x-dev  
 Display suite: yes  
-Menu: Nice menus  
+Menu: Nice menus 
+
+####20150315
+
+1. Testumgebung auf 149.154.152.64 eingerichtet
+2. Content Einpflege
+3. Frontend Anpassung 
 
 ###20150303
 
