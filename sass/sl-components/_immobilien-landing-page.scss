@@ -1,0 +1,131 @@
+/* CSS code for panel page one two
+** PANEL page immobilien landing page
+** added by criscom
+** /mietwohnungen
+**
+*/
+
+.flippy {
+    padding-left: 0;
+    .prev {
+        padding-left: 0;
+    }
+}
+
+
+.page-mietwohnungen .panel-2col-stacked
+{
+    h2.pane-title {
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 16px;
+        margin-bottom: 1rem;
+    }
+    .panel-col-top,
+    .center-wrapper .panel-col-first,
+    .center-wrapper .panel-col-last
+    {
+        @extend %base-background;
+    }
+    .pane__title
+    {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .panel-col-top
+    {
+        @extend %white-space;
+    }
+    .center-wrapper
+    {
+        @include clearfix;
+        .panel-col-first
+        {
+            width: 49%;
+
+            @include breakpoint($iphone5-6)
+            {
+                width: 100%;
+            }
+        @include breakpoint($max768) {
+            margin-bottom: $white-space-px;
+            margin-bottom: $white-space-rem;
+     }
+        }
+        .panel-col-last
+        {
+            @include breakpoint($desktop) {
+                width: 49%;
+                margin-left: 2%;
+            }
+
+            @include breakpoint($iphone5-6)
+            {
+                width: 100%;
+            }
+        }
+    }
+}
+
+h2.wohnung
+{
+    text-align: center;
+
+    background-color: darken($breadcrumb-bg, 40%);
+    // background-color: #d9d4d1;
+    a
+    {
+        font-size: $h3-font-size;
+        @include link-colors(
+        $normal: white,
+        $hover: $brand-primary);
+    }
+}
+
+.page-mietwohnungen .panel-2col-stacked
+{
+    .center-wrapper .view .view-content
+    {
+        @include flexbox ((
+        display: flex,
+        flex-flow: row wrap,
+        justy-content: space-around
+        ));
+        .views-row
+        {
+            width: 100%;
+            @include breakpoint($desktop) {
+            width: 49%;
+             }
+            @include breakpoint($xlarge) {
+                width: 265px;
+            }
+
+            // background-color: darken($breadcrumb-bg, 10%);
+            background-color: #d9d4d1;
+            border-top-left-radius: 4px;
+            border-top-right-radius: 4px;
+
+            @extend %divider-node;
+            &-odd
+            {
+                @include breakpoint($desktop){                
+                    margin-right: 2%;
+                }            
+            }
+            .wohnungsdetails {
+                text-align: center;
+                margin-bottom: 16px;
+                margin-bottom: 1rem;
+            }
+            .views-field-field-bilder {
+                text-align: center;
+            }
+            .wohnungsdetails-link {
+                margin-top: 16px;
+                margin-top: 1rem;
+                text-align: center;
+            }
+        }
+    }
+}

@@ -56,20 +56,44 @@ $zen-auto-include-grid-item-base: false;
 }
 
 /* Navigation bar */
-@media all and (min-width: 480px) {
-  .main {
+
+  .page {
     /* Move all the children of .main down to make room. */
-    padding-top: $nav-height;
+    // padding-top: $nav-height;
     position: relative;
+    margin-top: 12px;
+    margin-top: .75rem;
+  }
+  .main {
+        // @include breakpoint($range769-979) {
+      padding-top: 24px;
+      padding-top: 1.5rem;
+    // }
+    @include breakpoint($max768) {
+      padding-top: $nav-height;
+    }
   }
   .main-navigation {
     /* Move the navbar up inside .main's padding. */
     position: absolute;
-    top: 0;
     height: $nav-height;
-    width: $zen-grid-width;
+    // width: $zen-grid-width;
+    left: 0;
+    top: 64px;
+    
+    @include breakpoint($desktop) {
+      left: 0px;
+      top: 48px;
+    }
+    @include breakpoint($large) {
+      left: 330px;
+      top: 11px;
+    }
+    @media (min-width:980px) and (max-width:1080px) {
+      left: 260px !important;
+      top: 11px;
+    }
   }
-}
 
 } // End of @if $zen-switch-direction == false
 

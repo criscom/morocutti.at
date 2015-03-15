@@ -1343,23 +1343,56 @@ th {
 }
 
 /* Navigation bar */
-@media all and (min-width: 480px) {
-  /* line 60, ../sass/layouts/_responsive.scss */
-  .main {
-    /* Move all the children of .main down to make room. */
-    padding-top: 3em;
-    position: relative;
-  }
+/* line 60, ../sass/layouts/_responsive.scss */
+.page {
+  /* Move all the children of .main down to make room. */
+  position: relative;
+  margin-top: 12px;
+  margin-top: .75rem;
+}
 
-  /* line 65, ../sass/layouts/_responsive.scss */
-  .main-navigation {
-    /* Move the navbar up inside .main's padding. */
-    position: absolute;
-    top: 0;
-    height: 3em;
-    width: 100%;
+/* line 67, ../sass/layouts/_responsive.scss */
+.main {
+  padding-top: 24px;
+  padding-top: 1.5rem;
+}
+@media (max-width: 768px) {
+  /* line 67, ../sass/layouts/_responsive.scss */
+  .main {
+    padding-top: 3em;
   }
 }
+
+/* line 76, ../sass/layouts/_responsive.scss */
+.main-navigation {
+  /* Move the navbar up inside .main's padding. */
+  position: absolute;
+  height: 3em;
+  left: 0;
+  top: 64px;
+}
+@media (min-width: 769px) {
+  /* line 76, ../sass/layouts/_responsive.scss */
+  .main-navigation {
+    left: 0px;
+    top: 48px;
+  }
+}
+@media (min-width: 980px) {
+  /* line 76, ../sass/layouts/_responsive.scss */
+  .main-navigation {
+    left: 330px;
+    top: 11px;
+  }
+}
+@media (min-width: 980px) and (max-width: 1080px) {
+  /* line 76, ../sass/layouts/_responsive.scss */
+  .main-navigation {
+    left: 260px !important;
+    top: 11px;
+  }
+}
+
 /**
  * Use 3 grid columns for smaller screens.
  */
@@ -1367,12 +1400,12 @@ th {
   /**
    * The layout when there is only one sidebar, the left one.
    */
-  /* line 86, ../sass/layouts/_responsive.scss */
+  /* line 110, ../sass/layouts/_responsive.scss */
   .sidebar-first {
     /* Span 2 columns, starting in 2nd column from left. */
     /* Span 1 column, starting in 1st column from left. */
   }
-  /* line 88, ../sass/layouts/_responsive.scss */
+  /* line 112, ../sass/layouts/_responsive.scss */
   .sidebar-first .main-content {
     float: left;
     width: 66.66667%;
@@ -1380,7 +1413,7 @@ th {
     margin-right: -100%;
     *margin-right: -99.9%;
   }
-  /* line 93, ../sass/layouts/_responsive.scss */
+  /* line 117, ../sass/layouts/_responsive.scss */
   .sidebar-first .region-sidebar-first {
     float: left;
     width: 33.33333%;
@@ -1392,12 +1425,12 @@ th {
   /**
    * The layout when there is only one sidebar, the right one.
    */
-  /* line 101, ../sass/layouts/_responsive.scss */
+  /* line 125, ../sass/layouts/_responsive.scss */
   .sidebar-second {
     /* Span 2 columns, starting in 1st column from left. */
     /* Span 1 column, starting in 3rd column from left. */
   }
-  /* line 103, ../sass/layouts/_responsive.scss */
+  /* line 127, ../sass/layouts/_responsive.scss */
   .sidebar-second .main-content {
     float: left;
     width: 66.66667%;
@@ -1405,7 +1438,7 @@ th {
     margin-right: -100%;
     *margin-right: -99.9%;
   }
-  /* line 108, ../sass/layouts/_responsive.scss */
+  /* line 132, ../sass/layouts/_responsive.scss */
   .sidebar-second .region-sidebar-second {
     float: left;
     width: 33.33333%;
@@ -1417,13 +1450,13 @@ th {
   /**
    * The layout when there are two sidebars.
    */
-  /* line 116, ../sass/layouts/_responsive.scss */
+  /* line 140, ../sass/layouts/_responsive.scss */
   .two-sidebars {
     /* Span 2 columns, starting in 2nd column from left. */
     /* Span 1 column, starting in 1st column from left. */
     /* Start a new row and span all 3 columns. */
   }
-  /* line 118, ../sass/layouts/_responsive.scss */
+  /* line 142, ../sass/layouts/_responsive.scss */
   .two-sidebars .main-content {
     float: left;
     width: 66.66667%;
@@ -1431,7 +1464,7 @@ th {
     margin-right: -100%;
     *margin-right: -99.9%;
   }
-  /* line 123, ../sass/layouts/_responsive.scss */
+  /* line 147, ../sass/layouts/_responsive.scss */
   .two-sidebars .region-sidebar-first {
     float: left;
     width: 33.33333%;
@@ -1439,7 +1472,7 @@ th {
     margin-right: -100%;
     *margin-right: -99.9%;
   }
-  /* line 128, ../sass/layouts/_responsive.scss */
+  /* line 152, ../sass/layouts/_responsive.scss */
   .two-sidebars .region-sidebar-second {
     float: left;
     width: 100%;
@@ -1465,7 +1498,7 @@ th {
   .two-sidebars .region-sidebar-second:after {
     clear: both;
   }
-  /* line 134, ../sass/layouts/_responsive.scss */
+  /* line 158, ../sass/layouts/_responsive.scss */
   .two-sidebars .region-sidebar-second .block {
     padding-left: 10px;
     padding-right: 10px;
@@ -1475,7 +1508,7 @@ th {
     box-sizing: border-box;
     *word-wrap: break-word;
   }
-  /* line 138, ../sass/layouts/_responsive.scss */
+  /* line 162, ../sass/layouts/_responsive.scss */
   .two-sidebars .region-sidebar-second .block:nth-child(3n+1) {
     float: left;
     width: 33.33333%;
@@ -1484,7 +1517,7 @@ th {
     *margin-right: -99.9%;
     clear: left;
   }
-  /* line 143, ../sass/layouts/_responsive.scss */
+  /* line 167, ../sass/layouts/_responsive.scss */
   .two-sidebars .region-sidebar-second .block:nth-child(3n+2) {
     float: left;
     width: 33.33333%;
@@ -1492,7 +1525,7 @@ th {
     margin-right: -100%;
     *margin-right: -99.9%;
   }
-  /* line 147, ../sass/layouts/_responsive.scss */
+  /* line 171, ../sass/layouts/_responsive.scss */
   .two-sidebars .region-sidebar-second .block:nth-child(3n) {
     float: left;
     width: 33.33333%;
@@ -1508,12 +1541,12 @@ th {
   /**
    * The layout when there is only one sidebar, the left one.
    */
-  /* line 164, ../sass/layouts/_responsive.scss */
+  /* line 188, ../sass/layouts/_responsive.scss */
   .sidebar-first {
     /* Span 4 columns, starting in 2nd column from left. */
     /* Span 1 column, starting in 1st column from left. */
   }
-  /* line 166, ../sass/layouts/_responsive.scss */
+  /* line 190, ../sass/layouts/_responsive.scss */
   .sidebar-first .main-content {
     float: left;
     width: 80%;
@@ -1521,7 +1554,7 @@ th {
     margin-right: -100%;
     *margin-right: -99.9%;
   }
-  /* line 171, ../sass/layouts/_responsive.scss */
+  /* line 195, ../sass/layouts/_responsive.scss */
   .sidebar-first .region-sidebar-first {
     float: left;
     width: 20%;
@@ -1533,12 +1566,12 @@ th {
   /**
    * The layout when there is only one sidebar, the right one.
    */
-  /* line 179, ../sass/layouts/_responsive.scss */
+  /* line 203, ../sass/layouts/_responsive.scss */
   .sidebar-second {
     /* Span 4 columns, starting in 1st column from left. */
     /* Span 1 column, starting in 5th column from left. */
   }
-  /* line 181, ../sass/layouts/_responsive.scss */
+  /* line 205, ../sass/layouts/_responsive.scss */
   .sidebar-second .main-content {
     float: left;
     width: 80%;
@@ -1546,7 +1579,7 @@ th {
     margin-right: -100%;
     *margin-right: -99.9%;
   }
-  /* line 186, ../sass/layouts/_responsive.scss */
+  /* line 210, ../sass/layouts/_responsive.scss */
   .sidebar-second .region-sidebar-second {
     float: left;
     width: 20%;
@@ -1558,13 +1591,13 @@ th {
   /**
    * The layout when there are two sidebars.
    */
-  /* line 194, ../sass/layouts/_responsive.scss */
+  /* line 218, ../sass/layouts/_responsive.scss */
   .two-sidebars {
     /* Span 3 columns, starting in 2nd column from left. */
     /* Span 1 column, starting in 1st column from left. */
     /* Span 1 column, starting in 5th column from left. */
   }
-  /* line 196, ../sass/layouts/_responsive.scss */
+  /* line 220, ../sass/layouts/_responsive.scss */
   .two-sidebars .main-content {
     float: left;
     width: 60%;
@@ -1572,7 +1605,7 @@ th {
     margin-right: -100%;
     *margin-right: -99.9%;
   }
-  /* line 201, ../sass/layouts/_responsive.scss */
+  /* line 225, ../sass/layouts/_responsive.scss */
   .two-sidebars .region-sidebar-first {
     float: left;
     width: 20%;
@@ -1580,7 +1613,7 @@ th {
     margin-right: -100%;
     *margin-right: -99.9%;
   }
-  /* line 206, ../sass/layouts/_responsive.scss */
+  /* line 230, ../sass/layouts/_responsive.scss */
   .two-sidebars .region-sidebar-second {
     float: left;
     width: 20%;
@@ -3209,9 +3242,12 @@ body, [role='main'] p,
 }
 
 /* line 24, ../sass/library/_placeholders.scss */
-.panel-2col-stacked .panel-col-top,
-.panel-2col-stacked .center-wrapper .panel-col-first,
-.panel-2col-stacked .center-wrapper .panel-col-last, .center-wrapper.one .panel-panel, .center-wrapper.two .panel-col-first, .center-wrapper.two .panel-col-last, .node-wohnung .group-top,
+.page-mietwohnungen .panel-2col-stacked .panel-col-top,
+.page-mietwohnungen .panel-2col-stacked .center-wrapper .panel-col-first,
+.page-mietwohnungen .panel-2col-stacked .center-wrapper .panel-col-last, .center-wrapper.one .panel-col-first,
+.center-wrapper.one .panel-col-last, .center-wrapper.two .panel-col-first, .center-wrapper.two .panel-col-last, .page-unternehmensberatung .panel-2col-stacked .panel-col-top,
+.page-unternehmensberatung .panel-2col-stacked .center-wrapper .panel-col-first,
+.page-unternehmensberatung .panel-2col-stacked .center-wrapper .panel-col-last, .node-wohnung .group-top,
 .node-wohnung .group-left,
 .node-wohnung .group-right {
   background-color: #f5f5f5;
@@ -3221,20 +3257,20 @@ body, [role='main'] p,
 }
 
 /* line 39, ../sass/library/_placeholders.scss */
-.center-wrapper.two .node, .field-name-field-object-reference {
+.page-mietwohnungen .panel-2col-stacked .center-wrapper .view .view-content .views-row, .center-wrapper.two .node, .field-name-field-object-reference {
   padding-bottom: 16px;
   padding-bottom: 1rem;
   border-bottom: 1px solid #777777;
 }
 
 /* line 45, ../sass/library/_placeholders.scss */
-.center-wrapper.two .node {
+.page-mietwohnungen .panel-2col-stacked .center-wrapper .view .view-content .views-row, .center-wrapper.two .node {
   margin-bottom: 32px;
   margin-bottom: 2rem;
 }
 
 /* line 51, ../sass/library/_placeholders.scss */
-.panel-2col-stacked .panel-col-top, .center-wrapper.one .panel-panel, .node-wohnung .group-top {
+.page-mietwohnungen .panel-2col-stacked .panel-col-top, .center-wrapper.one .panel-panel, .page-unternehmensberatung .panel-2col-stacked .panel-col-top, .node-wohnung .group-top {
   margin-bottom: 24px;
   margin-bottom: 1.5rem;
 }
@@ -3293,7 +3329,7 @@ body, [role='main'] p,
 */
 /* line 34, ../sass/sl-components/_fonts.scss */
 .inline-link, div.download-file a, .not-front div p a {
-  color: red;
+  color: #428bca;
 }
 /* line 13, ../sass/library/_link.scss */
 .inline-link:hover, div.download-file a:hover, .not-front div p a:hover {
@@ -3301,11 +3337,11 @@ body, [role='main'] p,
 }
 /* line 14, ../sass/library/_link.scss */
 .inline-link:visited, div.download-file a:visited, .not-front div p a:visited {
-  color: #ff3333;
+  color: #6aa3d5;
 }
 /* line 15, ../sass/library/_link.scss */
 .inline-link:active, div.download-file a:active, .not-front div p a:active {
-  color: red;
+  color: #428bca;
 }
 
 /* line 54, ../sass/sl-components/_fonts.scss */
@@ -3417,6 +3453,157 @@ h1.object-title:hover,
 ** different header heights for frontpage and other pages
 ** no drupal logo in use
 */
+/* line 9, ../sass/sl-components/_header.scss */
+header {
+  background-color: #d9d4d1;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+}
+
+/* CSS code for panel page one two
+** PANEL page immobilien landing page
+** added by criscom
+** /mietwohnungen
+**
+*/
+/* line 8, ../sass/sl-components/_immobilien-landing-page.scss */
+.flippy {
+  padding-left: 0;
+}
+/* line 10, ../sass/sl-components/_immobilien-landing-page.scss */
+.flippy .prev {
+  padding-left: 0;
+}
+
+/* line 18, ../sass/sl-components/_immobilien-landing-page.scss */
+.page-mietwohnungen .panel-2col-stacked h2.pane-title {
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  margin-bottom: 1rem;
+}
+/* line 30, ../sass/sl-components/_immobilien-landing-page.scss */
+.page-mietwohnungen .panel-2col-stacked .pane__title {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+/* line 6, ../sass/library/_clearfix.scss */
+.page-mietwohnungen .panel-2col-stacked .center-wrapper:before {
+  content: '';
+  display: table;
+}
+/* line 11, ../sass/library/_clearfix.scss */
+.page-mietwohnungen .panel-2col-stacked .center-wrapper:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+/* line 42, ../sass/sl-components/_immobilien-landing-page.scss */
+.page-mietwohnungen .panel-2col-stacked .center-wrapper .panel-col-first {
+  width: 49%;
+}
+@media (max-width: 767px) {
+  /* line 42, ../sass/sl-components/_immobilien-landing-page.scss */
+  .page-mietwohnungen .panel-2col-stacked .center-wrapper .panel-col-first {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  /* line 42, ../sass/sl-components/_immobilien-landing-page.scss */
+  .page-mietwohnungen .panel-2col-stacked .center-wrapper .panel-col-first {
+    margin-bottom: 24px;
+    margin-bottom: 1.5rem;
+  }
+}
+@media (min-width: 769px) {
+  /* line 55, ../sass/sl-components/_immobilien-landing-page.scss */
+  .page-mietwohnungen .panel-2col-stacked .center-wrapper .panel-col-last {
+    width: 49%;
+    margin-left: 2%;
+  }
+}
+@media (max-width: 767px) {
+  /* line 55, ../sass/sl-components/_immobilien-landing-page.scss */
+  .page-mietwohnungen .panel-2col-stacked .center-wrapper .panel-col-last {
+    width: 100%;
+  }
+}
+
+/* line 70, ../sass/sl-components/_immobilien-landing-page.scss */
+h2.wohnung {
+  text-align: center;
+  background-color: #8f8f8f;
+}
+/* line 76, ../sass/sl-components/_immobilien-landing-page.scss */
+h2.wohnung a {
+  font-size: 18.72px;
+  color: white;
+}
+/* line 13, ../sass/library/_link.scss */
+h2.wohnung a:hover {
+  color: #428bca;
+}
+/* line 14, ../sass/library/_link.scss */
+h2.wohnung a:visited {
+  color: white;
+}
+/* line 15, ../sass/library/_link.scss */
+h2.wohnung a:active {
+  color: white;
+}
+
+/* line 87, ../sass/sl-components/_immobilien-landing-page.scss */
+.page-mietwohnungen .panel-2col-stacked .center-wrapper .view .view-content {
+  display: -webkit-flex;
+  -webkit-flex-flow: row wrap;
+  -webkit-justy-content: space-around;
+  display: flex;
+  flex-flow: row wrap;
+  justy-content: space-around;
+}
+/* line 94, ../sass/sl-components/_immobilien-landing-page.scss */
+.page-mietwohnungen .panel-2col-stacked .center-wrapper .view .view-content .views-row {
+  width: 100%;
+  background-color: #d9d4d1;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+@media (min-width: 769px) {
+  /* line 94, ../sass/sl-components/_immobilien-landing-page.scss */
+  .page-mietwohnungen .panel-2col-stacked .center-wrapper .view .view-content .views-row {
+    width: 49%;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 94, ../sass/sl-components/_immobilien-landing-page.scss */
+  .page-mietwohnungen .panel-2col-stacked .center-wrapper .view .view-content .views-row {
+    width: 265px;
+  }
+}
+@media (min-width: 769px) {
+  /* line 110, ../sass/sl-components/_immobilien-landing-page.scss */
+  .page-mietwohnungen .panel-2col-stacked .center-wrapper .view .view-content .views-row-odd {
+    margin-right: 2%;
+  }
+}
+/* line 116, ../sass/sl-components/_immobilien-landing-page.scss */
+.page-mietwohnungen .panel-2col-stacked .center-wrapper .view .view-content .views-row .wohnungsdetails {
+  text-align: center;
+  margin-bottom: 16px;
+  margin-bottom: 1rem;
+}
+/* line 121, ../sass/sl-components/_immobilien-landing-page.scss */
+.page-mietwohnungen .panel-2col-stacked .center-wrapper .view .view-content .views-row .views-field-field-bilder {
+  text-align: center;
+}
+/* line 124, ../sass/sl-components/_immobilien-landing-page.scss */
+.page-mietwohnungen .panel-2col-stacked .center-wrapper .view .view-content .views-row .wohnungsdetails-link {
+  margin-top: 16px;
+  margin-top: 1rem;
+  text-align: center;
+}
+
 /* CSS code for the language switcher
 ** added by criscom
 ** on all pages
@@ -3500,26 +3687,37 @@ ul.language-switcher-locale-url li a:active {
 ul.nice-menu li {
   border: 0;
   background-color: transparent;
+  padding-top: 2px;
+  padding-bottom: 2px;
 }
 @media (min-width: 769px) {
   /* line 25, ../sass/sl-components/_main-menu-desktop.scss */
   ul.nice-menu li {
     padding-right: 12px;
-    padding-right: .7rem;
+    padding-right: .75rem;
+    padding-left: 6px;
+    padding-left: .375rem;
+  }
+}
+@media (min-width: 980px) and (max-width: 1080px) {
+  /* line 25, ../sass/sl-components/_main-menu-desktop.scss */
+  ul.nice-menu li {
+    padding-right: 4px !important;
+    padding-right: .5rem !important;
+    padding-left: 4px !important;
+    padding-left: .25rem !important;
   }
 }
 @media (min-width: 980px) {
   /* line 25, ../sass/sl-components/_main-menu-desktop.scss */
   ul.nice-menu li {
-    padding-right: 32px;
-    padding-right: 2rem;
+    padding-right: 8px;
+    padding-right: .5rem;
+    padding-left: 8px;
+    padding-left: .5rem;
   }
 }
-/* line 41, ../sass/sl-components/_main-menu-desktop.scss */
-ul.nice-menu li.last {
-  padding-right: 0;
-}
-/* line 45, ../sass/sl-components/_main-menu-desktop.scss */
+/* line 56, ../sass/sl-components/_main-menu-desktop.scss */
 ul.nice-menu li a {
   text-decoration: none;
   text-transform: uppercase;
@@ -3528,7 +3726,7 @@ ul.nice-menu li a {
 }
 /* line 13, ../sass/library/_link.scss */
 ul.nice-menu li a:hover {
-  color: red !important;
+  color: #428bca !important;
 }
 /* line 14, ../sass/library/_link.scss */
 ul.nice-menu li a:visited {
@@ -3538,24 +3736,32 @@ ul.nice-menu li a:visited {
 ul.nice-menu li a:active {
   color: #231f20;
 }
-/* line 55, ../sass/sl-components/_main-menu-desktop.scss */
+/* line 66, ../sass/sl-components/_main-menu-desktop.scss */
+ul.nice-menu li.active-trail {
+  background-color: white !important;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+/* line 70, ../sass/sl-components/_main-menu-desktop.scss */
 ul.nice-menu li.active-trail a {
-  color: red;
+  color: black;
 }
 
-/* line 63, ../sass/sl-components/_main-menu-desktop.scss */
+/* line 79, ../sass/sl-components/_main-menu-desktop.scss */
 ul.nice-menu-down li.menuparent,
 ul.nice-menu-down li.menuparent:hover {
   background-color: transparent;
   background-image: none;
 }
 
-/* line 73, ../sass/sl-components/_main-menu-desktop.scss */
+/* line 89, ../sass/sl-components/_main-menu-desktop.scss */
 ul.nice-menu ul {
+  top: 44px;
+  top: 2.5rem;
   border-top: 0;
   background-color: white;
 }
-/* line 81, ../sass/sl-components/_main-menu-desktop.scss */
+/* line 98, ../sass/sl-components/_main-menu-desktop.scss */
 ul.nice-menu ul li a {
   text-decoration: none;
   color: black;
@@ -3581,60 +3787,21 @@ ul.nice-menu ul li a:active {
 */
 @media (max-width: 768px) {
   /* line 11, ../sass/sl-components/_main-menu-mobile.scss */
+  .main-navigation {
+    width: 100%;
+  }
+
+  /* line 17, ../sass/sl-components/_main-menu-mobile.scss */
   .block-nice-menus {
     display: none;
   }
-
-  /* line 15, ../sass/sl-components/_main-menu-mobile.scss */
-  .region-navigation {
-    margin: 16px 0;
-    margin: 1rem 0;
-  }
 }
-/* CSS code for panel page one col two rows
+/* CSS code for panel page one col / two col
 ** PANEL page
 ** added by criscom
-** /panel-one-two
-**
+** /metallbau
+** (Morocutti.at ==> metallbau)
 */
-/* line 14, ../sass/sl-components/_panel-one-two.scss */
-.panel-2col-stacked .pane__title {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-/* line 6, ../sass/library/_clearfix.scss */
-.panel-2col-stacked .center-wrapper:before {
-  content: '';
-  display: table;
-}
-/* line 11, ../sass/library/_clearfix.scss */
-.panel-2col-stacked .center-wrapper:after {
-  content: '';
-  display: table;
-  clear: both;
-}
-/* line 23, ../sass/sl-components/_panel-one-two.scss */
-.panel-2col-stacked .center-wrapper .panel-col-first {
-  width: 68%;
-}
-@media (max-width: 767px) {
-  /* line 23, ../sass/sl-components/_panel-one-two.scss */
-  .panel-2col-stacked .center-wrapper .panel-col-first {
-    width: 100%;
-  }
-}
-/* line 30, ../sass/sl-components/_panel-one-two.scss */
-.panel-2col-stacked .center-wrapper .panel-col-last {
-  width: 30%;
-  margin-left: 2%;
-}
-@media (max-width: 767px) {
-  /* line 30, ../sass/sl-components/_panel-one-two.scss */
-  .panel-2col-stacked .center-wrapper .panel-col-last {
-    width: 100%;
-  }
-}
-
 /* CSS code for panel page one col / two col
 ** PANEL page
 ** added by criscom
@@ -3652,87 +3819,154 @@ ul.nice-menu ul li a:active {
   display: table;
   clear: both;
 }
-/* line 14, ../sass/sl-components/_panel-two-two.scss */
+@media (min-width: 980px) {
+  /* line 14, ../sass/sl-components/_ueber-uns.scss */
+  .center-wrapper.one .panel-col-first,
+  .center-wrapper.one .panel-col-last {
+    width: 49%;
+  }
+}
+/* line 22, ../sass/sl-components/_ueber-uns.scss */
+.center-wrapper.one .panel-col-first {
+  margin-right: 2%;
+}
+/* line 25, ../sass/sl-components/_ueber-uns.scss */
+.center-wrapper.one .panel-col-first .field-name-body p {
+  white-space: pre;
+  white-space: pre-wrap;
+  white-space: pre-line;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -hp-pre-wrap;
+  word-wrap: break-word;
+}
+/* line 30, ../sass/sl-components/_ueber-uns.scss */
 .center-wrapper.one h2 {
   margin-top: 0;
   margin-bottom: 0;
 }
 @media (max-width: 979px) {
-  /* line 19, ../sass/sl-components/_panel-two-two.scss */
+  /* line 35, ../sass/sl-components/_ueber-uns.scss */
   .center-wrapper.one .panel-panel {
     float: none;
     width: 100%;
   }
 }
-/* line 30, ../sass/sl-components/_panel-two-two.scss */
+/* line 46, ../sass/sl-components/_ueber-uns.scss */
 .center-wrapper.one .panel-panel .group-left {
   width: 30%;
   margin-right: 4%;
 }
-/* line 34, ../sass/sl-components/_panel-two-two.scss */
+/* line 50, ../sass/sl-components/_ueber-uns.scss */
 .center-wrapper.one .panel-panel .group-left img {
   -moz-border-radius: 20px;
   -webkit-border-radius: 20px;
   border-radius: 20px;
 }
-/* line 38, ../sass/sl-components/_panel-two-two.scss */
+/* line 54, ../sass/sl-components/_ueber-uns.scss */
 .center-wrapper.one .panel-panel .group-right {
   width: 66%;
 }
 
-/* line 49, ../sass/sl-components/_panel-two-two.scss */
+/* line 65, ../sass/sl-components/_ueber-uns.scss */
 .center-wrapper.two .field-name-title-field h2,
 .center-wrapper.two h2.pane-title.pane__title {
   margin-top: 0;
   margin-bottom: 0;
 }
-/* line 57, ../sass/sl-components/_panel-two-two.scss */
+/* line 73, ../sass/sl-components/_ueber-uns.scss */
 .center-wrapper.two .group-left {
-  width: 35%;
+  width: 34%;
+  margin-right: 2%;
 }
-/* line 60, ../sass/sl-components/_panel-two-two.scss */
+/* line 77, ../sass/sl-components/_ueber-uns.scss */
 .center-wrapper.two .group-right {
-  width: 65%;
+  width: 64%;
 }
-/* line 66, ../sass/sl-components/_panel-two-two.scss */
+/* line 83, ../sass/sl-components/_ueber-uns.scss */
 .center-wrapper.two .node img {
   -moz-border-radius: 20px;
   -webkit-border-radius: 20px;
   border-radius: 20px;
 }
-/* line 71, ../sass/sl-components/_panel-two-two.scss */
+/* line 88, ../sass/sl-components/_ueber-uns.scss */
 .center-wrapper.two .pane-node:nth-child(3) .node {
   border: 0;
   margin-bottom: 0;
   padding-bottom: 0;
 }
-/* line 77, ../sass/sl-components/_panel-two-two.scss */
+/* line 94, ../sass/sl-components/_ueber-uns.scss */
 .center-wrapper.two .panel-col-first {
   width: 68%;
 }
 @media (max-width: 767px) {
-  /* line 77, ../sass/sl-components/_panel-two-two.scss */
+  /* line 94, ../sass/sl-components/_ueber-uns.scss */
   .center-wrapper.two .panel-col-first {
     width: 100%;
   }
 }
 @media (max-width: 768px) {
-  /* line 77, ../sass/sl-components/_panel-two-two.scss */
+  /* line 94, ../sass/sl-components/_ueber-uns.scss */
   .center-wrapper.two .panel-col-first {
     margin-bottom: 24px;
     margin-bottom: 1.5rem;
   }
 }
 @media (min-width: 769px) {
-  /* line 91, ../sass/sl-components/_panel-two-two.scss */
+  /* line 108, ../sass/sl-components/_ueber-uns.scss */
   .center-wrapper.two .panel-col-last {
     width: 30%;
     margin-left: 2%;
   }
 }
 @media (max-width: 767px) {
-  /* line 91, ../sass/sl-components/_panel-two-two.scss */
+  /* line 108, ../sass/sl-components/_ueber-uns.scss */
   .center-wrapper.two .panel-col-last {
+    width: 100%;
+  }
+}
+
+/* CSS code for panel page one col two rows
+** PANEL page
+** added by criscom
+** /panel-one-two
+**
+*/
+/* line 13, ../sass/sl-components/_unternehmensberatung.scss */
+.page-unternehmensberatung .panel-2col-stacked .pane__title {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+/* line 6, ../sass/library/_clearfix.scss */
+.page-unternehmensberatung .panel-2col-stacked .center-wrapper:before {
+  content: '';
+  display: table;
+}
+/* line 11, ../sass/library/_clearfix.scss */
+.page-unternehmensberatung .panel-2col-stacked .center-wrapper:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+/* line 22, ../sass/sl-components/_unternehmensberatung.scss */
+.page-unternehmensberatung .panel-2col-stacked .center-wrapper .panel-col-first {
+  width: 68%;
+}
+@media (max-width: 767px) {
+  /* line 22, ../sass/sl-components/_unternehmensberatung.scss */
+  .page-unternehmensberatung .panel-2col-stacked .center-wrapper .panel-col-first {
+    width: 100%;
+  }
+}
+/* line 29, ../sass/sl-components/_unternehmensberatung.scss */
+.page-unternehmensberatung .panel-2col-stacked .center-wrapper .panel-col-last {
+  width: 30%;
+  margin-left: 2%;
+}
+@media (max-width: 767px) {
+  /* line 29, ../sass/sl-components/_unternehmensberatung.scss */
+  .page-unternehmensberatung .panel-2col-stacked .center-wrapper .panel-col-last {
     width: 100%;
   }
 }

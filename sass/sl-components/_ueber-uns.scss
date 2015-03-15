@@ -11,6 +11,22 @@
 .center-wrapper.one
 {
     @include clearfix;
+    .panel-col-first,
+    .panel-col-last {
+        @extend %base-background;
+        @include breakpoint($large) {
+            
+            width: 49%
+        }
+    }
+    .panel-col-first {
+        margin-right: 2%;
+        .field-name-body {
+            p {
+                @include force-wrap;
+            }
+        }
+    }
     h2
     {
         margin-top: 0;
@@ -20,13 +36,13 @@
     {
         @extend %white-space;
 
-        @extend %base-background;
         @include breakpoint($max979)
         {
             float: none;
 
             width: 100%;
         }
+
         .group-left
         {
             width: 30%;
@@ -55,10 +71,11 @@
         margin-bottom: 0;
     }
     .group-left {
-        width: 35%;
+        width: 34%;
+        margin-right: 2%;
     }
     .group-right {
-        width: 65%;
+        width: 64%;
     }
     .node
     {
@@ -86,7 +103,7 @@
         @include breakpoint($max768) {
             margin-bottom: $white-space-px;
             margin-bottom: $white-space-rem;
-    }
+     }
     }
     .panel-col-last
     {

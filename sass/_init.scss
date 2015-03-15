@@ -30,10 +30,13 @@
 @import "compass/css3";
 // Helps set up a vertical rhythm.
 @import "compass/typography/vertical_rhythm";
+// This mixin will wrap URLs and long lines of text to prevent text from breaking layouts.
+@import "compass/typography/text/force-wrap";
 // Add Compass flexbox
 @import "compass/css3/flexbox";
 // Add the Zen Grids responsive layout mixins.
 @import "zen-grids";
+
 
 // Now we add our custom helper mixins.
 @import "library/clearfix";

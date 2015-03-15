@@ -8,12 +8,18 @@
 // Hide responsive menu
 @include breakpoint($max768)
 {
+    .main-navigation {
+        // top: 4px;
+        width: $zen-grid-width;
+    }
+    .responsive-menus.responsified {
+    }
     .block-nice-menus
     {
         display: none;
     }
     .region-navigation {
-        margin: 16px 0;
-        margin: 1rem 0;
+        // margin: 16px 0;
+        // margin: 1rem 0;
     }
 }
