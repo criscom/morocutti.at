@@ -42,6 +42,12 @@ div.download-file a
     @extend .inline-link;
 }
 
+// header font weight
+
+h1 {
+    @extend %base-font-weight;
+}
+
 // hover color for link-less headers and titles
 
 .page-panels h1, // general header of panels page

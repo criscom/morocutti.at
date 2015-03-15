@@ -1356,6 +1356,12 @@ th {
   padding-top: 24px;
   padding-top: 1.5rem;
 }
+@media (min-width: 769px) and (max-width: 1044px) {
+  /* line 67, ../sass/layouts/_responsive.scss */
+  .main {
+    padding-top: 3em;
+  }
+}
 @media (max-width: 768px) {
   /* line 67, ../sass/layouts/_responsive.scss */
   .main {
@@ -1363,33 +1369,36 @@ th {
   }
 }
 
-/* line 76, ../sass/layouts/_responsive.scss */
+/* line 79, ../sass/layouts/_responsive.scss */
 .main-navigation {
   /* Move the navbar up inside .main's padding. */
   position: absolute;
   height: 3em;
   left: 0;
-  top: 64px;
+  top: 72px;
+  top: 4.5rem;
 }
-@media (min-width: 769px) {
-  /* line 76, ../sass/layouts/_responsive.scss */
+@media (min-width: 769px) and (max-width: 1044px) {
+  /* line 79, ../sass/layouts/_responsive.scss */
   .main-navigation {
-    left: 0px;
-    top: 48px;
+    width: 100%;
+    background-color: #d9d4d1;
+    padding-top: 8px;
+    padding-top: .5rem;
   }
 }
-@media (min-width: 980px) {
-  /* line 76, ../sass/layouts/_responsive.scss */
+@media (min-width: 1095px) {
+  /* line 79, ../sass/layouts/_responsive.scss */
   .main-navigation {
-    left: 330px;
-    top: 11px;
+    left: 390px;
+    top: 20px;
   }
 }
-@media (min-width: 980px) and (max-width: 1080px) {
-  /* line 76, ../sass/layouts/_responsive.scss */
+@media (min-width: 1045px) and (max-width: 1094px) {
+  /* line 79, ../sass/layouts/_responsive.scss */
   .main-navigation {
-    left: 260px !important;
-    top: 11px;
+    left: 380px !important;
+    top: 20px;
   }
 }
 
@@ -1400,12 +1409,12 @@ th {
   /**
    * The layout when there is only one sidebar, the left one.
    */
-  /* line 110, ../sass/layouts/_responsive.scss */
+  /* line 115, ../sass/layouts/_responsive.scss */
   .sidebar-first {
     /* Span 2 columns, starting in 2nd column from left. */
     /* Span 1 column, starting in 1st column from left. */
   }
-  /* line 112, ../sass/layouts/_responsive.scss */
+  /* line 117, ../sass/layouts/_responsive.scss */
   .sidebar-first .main-content {
     float: left;
     width: 66.66667%;
@@ -1413,7 +1422,7 @@ th {
     margin-right: -100%;
     *margin-right: -99.9%;
   }
-  /* line 117, ../sass/layouts/_responsive.scss */
+  /* line 122, ../sass/layouts/_responsive.scss */
   .sidebar-first .region-sidebar-first {
     float: left;
     width: 33.33333%;
@@ -1425,12 +1434,12 @@ th {
   /**
    * The layout when there is only one sidebar, the right one.
    */
-  /* line 125, ../sass/layouts/_responsive.scss */
+  /* line 130, ../sass/layouts/_responsive.scss */
   .sidebar-second {
     /* Span 2 columns, starting in 1st column from left. */
     /* Span 1 column, starting in 3rd column from left. */
   }
-  /* line 127, ../sass/layouts/_responsive.scss */
+  /* line 132, ../sass/layouts/_responsive.scss */
   .sidebar-second .main-content {
     float: left;
     width: 66.66667%;
@@ -1438,7 +1447,7 @@ th {
     margin-right: -100%;
     *margin-right: -99.9%;
   }
-  /* line 132, ../sass/layouts/_responsive.scss */
+  /* line 137, ../sass/layouts/_responsive.scss */
   .sidebar-second .region-sidebar-second {
     float: left;
     width: 33.33333%;
@@ -1450,13 +1459,13 @@ th {
   /**
    * The layout when there are two sidebars.
    */
-  /* line 140, ../sass/layouts/_responsive.scss */
+  /* line 145, ../sass/layouts/_responsive.scss */
   .two-sidebars {
     /* Span 2 columns, starting in 2nd column from left. */
     /* Span 1 column, starting in 1st column from left. */
     /* Start a new row and span all 3 columns. */
   }
-  /* line 142, ../sass/layouts/_responsive.scss */
+  /* line 147, ../sass/layouts/_responsive.scss */
   .two-sidebars .main-content {
     float: left;
     width: 66.66667%;
@@ -1464,7 +1473,7 @@ th {
     margin-right: -100%;
     *margin-right: -99.9%;
   }
-  /* line 147, ../sass/layouts/_responsive.scss */
+  /* line 152, ../sass/layouts/_responsive.scss */
   .two-sidebars .region-sidebar-first {
     float: left;
     width: 33.33333%;
@@ -1472,7 +1481,7 @@ th {
     margin-right: -100%;
     *margin-right: -99.9%;
   }
-  /* line 152, ../sass/layouts/_responsive.scss */
+  /* line 157, ../sass/layouts/_responsive.scss */
   .two-sidebars .region-sidebar-second {
     float: left;
     width: 100%;
@@ -1498,7 +1507,7 @@ th {
   .two-sidebars .region-sidebar-second:after {
     clear: both;
   }
-  /* line 158, ../sass/layouts/_responsive.scss */
+  /* line 163, ../sass/layouts/_responsive.scss */
   .two-sidebars .region-sidebar-second .block {
     padding-left: 10px;
     padding-right: 10px;
@@ -1508,7 +1517,7 @@ th {
     box-sizing: border-box;
     *word-wrap: break-word;
   }
-  /* line 162, ../sass/layouts/_responsive.scss */
+  /* line 167, ../sass/layouts/_responsive.scss */
   .two-sidebars .region-sidebar-second .block:nth-child(3n+1) {
     float: left;
     width: 33.33333%;
@@ -1517,7 +1526,7 @@ th {
     *margin-right: -99.9%;
     clear: left;
   }
-  /* line 167, ../sass/layouts/_responsive.scss */
+  /* line 172, ../sass/layouts/_responsive.scss */
   .two-sidebars .region-sidebar-second .block:nth-child(3n+2) {
     float: left;
     width: 33.33333%;
@@ -1525,7 +1534,7 @@ th {
     margin-right: -100%;
     *margin-right: -99.9%;
   }
-  /* line 171, ../sass/layouts/_responsive.scss */
+  /* line 176, ../sass/layouts/_responsive.scss */
   .two-sidebars .region-sidebar-second .block:nth-child(3n) {
     float: left;
     width: 33.33333%;
@@ -1541,12 +1550,12 @@ th {
   /**
    * The layout when there is only one sidebar, the left one.
    */
-  /* line 188, ../sass/layouts/_responsive.scss */
+  /* line 193, ../sass/layouts/_responsive.scss */
   .sidebar-first {
     /* Span 4 columns, starting in 2nd column from left. */
     /* Span 1 column, starting in 1st column from left. */
   }
-  /* line 190, ../sass/layouts/_responsive.scss */
+  /* line 195, ../sass/layouts/_responsive.scss */
   .sidebar-first .main-content {
     float: left;
     width: 80%;
@@ -1554,7 +1563,7 @@ th {
     margin-right: -100%;
     *margin-right: -99.9%;
   }
-  /* line 195, ../sass/layouts/_responsive.scss */
+  /* line 200, ../sass/layouts/_responsive.scss */
   .sidebar-first .region-sidebar-first {
     float: left;
     width: 20%;
@@ -1566,12 +1575,12 @@ th {
   /**
    * The layout when there is only one sidebar, the right one.
    */
-  /* line 203, ../sass/layouts/_responsive.scss */
+  /* line 208, ../sass/layouts/_responsive.scss */
   .sidebar-second {
     /* Span 4 columns, starting in 1st column from left. */
     /* Span 1 column, starting in 5th column from left. */
   }
-  /* line 205, ../sass/layouts/_responsive.scss */
+  /* line 210, ../sass/layouts/_responsive.scss */
   .sidebar-second .main-content {
     float: left;
     width: 80%;
@@ -1579,7 +1588,7 @@ th {
     margin-right: -100%;
     *margin-right: -99.9%;
   }
-  /* line 210, ../sass/layouts/_responsive.scss */
+  /* line 215, ../sass/layouts/_responsive.scss */
   .sidebar-second .region-sidebar-second {
     float: left;
     width: 20%;
@@ -1591,13 +1600,13 @@ th {
   /**
    * The layout when there are two sidebars.
    */
-  /* line 218, ../sass/layouts/_responsive.scss */
+  /* line 223, ../sass/layouts/_responsive.scss */
   .two-sidebars {
     /* Span 3 columns, starting in 2nd column from left. */
     /* Span 1 column, starting in 1st column from left. */
     /* Span 1 column, starting in 5th column from left. */
   }
-  /* line 220, ../sass/layouts/_responsive.scss */
+  /* line 225, ../sass/layouts/_responsive.scss */
   .two-sidebars .main-content {
     float: left;
     width: 60%;
@@ -1605,7 +1614,7 @@ th {
     margin-right: -100%;
     *margin-right: -99.9%;
   }
-  /* line 225, ../sass/layouts/_responsive.scss */
+  /* line 230, ../sass/layouts/_responsive.scss */
   .two-sidebars .region-sidebar-first {
     float: left;
     width: 20%;
@@ -1613,7 +1622,7 @@ th {
     margin-right: -100%;
     *margin-right: -99.9%;
   }
-  /* line 230, ../sass/layouts/_responsive.scss */
+  /* line 235, ../sass/layouts/_responsive.scss */
   .two-sidebars .region-sidebar-second {
     float: left;
     width: 20%;
@@ -3226,12 +3235,12 @@ body, [role='main'] p,
 
 /* line 12, ../sass/library/_placeholders.scss */
 body, [role='main'] p,
-[role='main'] ul li, .webform-component label {
+[role='main'] ul li, h1, .page-mietwohnungen .panel-2col-stacked h2.pane-title, ul.nice-menu li a, .webform-component label {
   font-weight: 300;
 }
 
 /* line 16, ../sass/library/_placeholders.scss */
-.inline-link, div.download-file a, .not-front div p a, ul.language-switcher-locale-url li a, ul.nice-menu li a {
+.inline-link, div.download-file a, .not-front div p a, ul.language-switcher-locale-url li a {
   font-weight: 500;
 }
 
@@ -3344,7 +3353,7 @@ body, [role='main'] p,
   color: #428bca;
 }
 
-/* line 54, ../sass/sl-components/_fonts.scss */
+/* line 60, ../sass/sl-components/_fonts.scss */
 .page-panels h1:hover,
 .panel-display .panle-panel h2:hover,
 h1.object-title:hover,
@@ -3454,11 +3463,25 @@ h1.object-title:hover,
 ** no drupal logo in use
 */
 /* line 9, ../sass/sl-components/_header.scss */
-header {
+header.header {
   background-color: #d9d4d1;
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
   border-radius: 4px;
+  padding: 8px 0;
+}
+
+/* line 17, ../sass/sl-components/_header.scss */
+.header__site-link:hover {
+  text-decoration: none;
+  color: #428bca;
+}
+/* line 21, ../sass/sl-components/_header.scss */
+.header__site-link span {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 48px;
+  padding-left: 16px;
+  padding-left: 1rem;
 }
 
 /* CSS code for panel page one two
@@ -3467,23 +3490,14 @@ header {
 ** /mietwohnungen
 **
 */
-/* line 8, ../sass/sl-components/_immobilien-landing-page.scss */
-.flippy {
-  padding-left: 0;
-}
-/* line 10, ../sass/sl-components/_immobilien-landing-page.scss */
-.flippy .prev {
-  padding-left: 0;
-}
-
-/* line 18, ../sass/sl-components/_immobilien-landing-page.scss */
+/* line 11, ../sass/sl-components/_immobilien-landing-page.scss */
 .page-mietwohnungen .panel-2col-stacked h2.pane-title {
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 16px;
   margin-bottom: 1rem;
 }
-/* line 30, ../sass/sl-components/_immobilien-landing-page.scss */
+/* line 24, ../sass/sl-components/_immobilien-landing-page.scss */
 .page-mietwohnungen .panel-2col-stacked .pane__title {
   margin-top: 0;
   margin-bottom: 0;
@@ -3499,43 +3513,43 @@ header {
   display: table;
   clear: both;
 }
-/* line 42, ../sass/sl-components/_immobilien-landing-page.scss */
+/* line 36, ../sass/sl-components/_immobilien-landing-page.scss */
 .page-mietwohnungen .panel-2col-stacked .center-wrapper .panel-col-first {
   width: 49%;
 }
 @media (max-width: 767px) {
-  /* line 42, ../sass/sl-components/_immobilien-landing-page.scss */
+  /* line 36, ../sass/sl-components/_immobilien-landing-page.scss */
   .page-mietwohnungen .panel-2col-stacked .center-wrapper .panel-col-first {
     width: 100%;
   }
 }
 @media (max-width: 768px) {
-  /* line 42, ../sass/sl-components/_immobilien-landing-page.scss */
+  /* line 36, ../sass/sl-components/_immobilien-landing-page.scss */
   .page-mietwohnungen .panel-2col-stacked .center-wrapper .panel-col-first {
     margin-bottom: 24px;
     margin-bottom: 1.5rem;
   }
 }
 @media (min-width: 769px) {
-  /* line 55, ../sass/sl-components/_immobilien-landing-page.scss */
+  /* line 49, ../sass/sl-components/_immobilien-landing-page.scss */
   .page-mietwohnungen .panel-2col-stacked .center-wrapper .panel-col-last {
     width: 49%;
     margin-left: 2%;
   }
 }
 @media (max-width: 767px) {
-  /* line 55, ../sass/sl-components/_immobilien-landing-page.scss */
+  /* line 49, ../sass/sl-components/_immobilien-landing-page.scss */
   .page-mietwohnungen .panel-2col-stacked .center-wrapper .panel-col-last {
     width: 100%;
   }
 }
 
-/* line 70, ../sass/sl-components/_immobilien-landing-page.scss */
+/* line 64, ../sass/sl-components/_immobilien-landing-page.scss */
 h2.wohnung {
   text-align: center;
   background-color: #8f8f8f;
 }
-/* line 76, ../sass/sl-components/_immobilien-landing-page.scss */
+/* line 70, ../sass/sl-components/_immobilien-landing-page.scss */
 h2.wohnung a {
   font-size: 18.72px;
   color: white;
@@ -3553,7 +3567,7 @@ h2.wohnung a:active {
   color: white;
 }
 
-/* line 87, ../sass/sl-components/_immobilien-landing-page.scss */
+/* line 81, ../sass/sl-components/_immobilien-landing-page.scss */
 .page-mietwohnungen .panel-2col-stacked .center-wrapper .view .view-content {
   display: -webkit-flex;
   -webkit-flex-flow: row wrap;
@@ -3562,7 +3576,7 @@ h2.wohnung a:active {
   flex-flow: row wrap;
   justy-content: space-around;
 }
-/* line 94, ../sass/sl-components/_immobilien-landing-page.scss */
+/* line 88, ../sass/sl-components/_immobilien-landing-page.scss */
 .page-mietwohnungen .panel-2col-stacked .center-wrapper .view .view-content .views-row {
   width: 100%;
   background-color: #d9d4d1;
@@ -3570,38 +3584,51 @@ h2.wohnung a:active {
   border-top-right-radius: 4px;
 }
 @media (min-width: 769px) {
-  /* line 94, ../sass/sl-components/_immobilien-landing-page.scss */
+  /* line 88, ../sass/sl-components/_immobilien-landing-page.scss */
   .page-mietwohnungen .panel-2col-stacked .center-wrapper .view .view-content .views-row {
     width: 49%;
   }
 }
 @media (min-width: 1200px) {
-  /* line 94, ../sass/sl-components/_immobilien-landing-page.scss */
+  /* line 88, ../sass/sl-components/_immobilien-landing-page.scss */
   .page-mietwohnungen .panel-2col-stacked .center-wrapper .view .view-content .views-row {
     width: 265px;
   }
 }
 @media (min-width: 769px) {
-  /* line 110, ../sass/sl-components/_immobilien-landing-page.scss */
+  /* line 104, ../sass/sl-components/_immobilien-landing-page.scss */
   .page-mietwohnungen .panel-2col-stacked .center-wrapper .view .view-content .views-row-odd {
     margin-right: 2%;
   }
 }
-/* line 116, ../sass/sl-components/_immobilien-landing-page.scss */
+@media (min-width: 1200px) {
+  /* line 104, ../sass/sl-components/_immobilien-landing-page.scss */
+  .page-mietwohnungen .panel-2col-stacked .center-wrapper .view .view-content .views-row-odd {
+    margin-right: 16px;
+    margin-right: 1rem;
+  }
+}
+/* line 114, ../sass/sl-components/_immobilien-landing-page.scss */
 .page-mietwohnungen .panel-2col-stacked .center-wrapper .view .view-content .views-row .wohnungsdetails {
   text-align: center;
   margin-bottom: 16px;
   margin-bottom: 1rem;
 }
-/* line 121, ../sass/sl-components/_immobilien-landing-page.scss */
+/* line 119, ../sass/sl-components/_immobilien-landing-page.scss */
 .page-mietwohnungen .panel-2col-stacked .center-wrapper .view .view-content .views-row .views-field-field-bilder {
   text-align: center;
 }
-/* line 124, ../sass/sl-components/_immobilien-landing-page.scss */
+/* line 122, ../sass/sl-components/_immobilien-landing-page.scss */
 .page-mietwohnungen .panel-2col-stacked .center-wrapper .view .view-content .views-row .wohnungsdetails-link {
   margin-top: 16px;
   margin-top: 1rem;
   text-align: center;
+}
+/* line 127, ../sass/sl-components/_immobilien-landing-page.scss */
+.page-mietwohnungen .panel-2col-stacked .center-wrapper .view .view-content .views-row img {
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
 }
 
 /* CSS code for the language switcher
@@ -3687,26 +3714,8 @@ ul.language-switcher-locale-url li a:active {
 ul.nice-menu li {
   border: 0;
   background-color: transparent;
-  padding-top: 2px;
-  padding-bottom: 2px;
-}
-@media (min-width: 769px) {
-  /* line 25, ../sass/sl-components/_main-menu-desktop.scss */
-  ul.nice-menu li {
-    padding-right: 12px;
-    padding-right: .75rem;
-    padding-left: 6px;
-    padding-left: .375rem;
-  }
-}
-@media (min-width: 980px) and (max-width: 1080px) {
-  /* line 25, ../sass/sl-components/_main-menu-desktop.scss */
-  ul.nice-menu li {
-    padding-right: 4px !important;
-    padding-right: .5rem !important;
-    padding-left: 4px !important;
-    padding-left: .25rem !important;
-  }
+  padding-top: 8px;
+  padding-bottom: 10px;
 }
 @media (min-width: 980px) {
   /* line 25, ../sass/sl-components/_main-menu-desktop.scss */
@@ -3717,7 +3726,25 @@ ul.nice-menu li {
     padding-left: .5rem;
   }
 }
-/* line 56, ../sass/sl-components/_main-menu-desktop.scss */
+@media (min-width: 769px) and (max-width: 1044px) {
+  /* line 25, ../sass/sl-components/_main-menu-desktop.scss */
+  ul.nice-menu li {
+    padding-right: 12px;
+    padding-right: 0.75rem;
+    padding-left: 12px;
+    padding-left: 0.75rem;
+  }
+}
+@media (min-width: 1045px) and (max-width: 1094px) {
+  /* line 25, ../sass/sl-components/_main-menu-desktop.scss */
+  ul.nice-menu li {
+    padding-right: 4px !important;
+    padding-right: .25rem !important;
+    padding-left: 4px !important;
+    padding-left: .25rem !important;
+  }
+}
+/* line 54, ../sass/sl-components/_main-menu-desktop.scss */
 ul.nice-menu li a {
   text-decoration: none;
   text-transform: uppercase;
@@ -3736,32 +3763,32 @@ ul.nice-menu li a:visited {
 ul.nice-menu li a:active {
   color: #231f20;
 }
-/* line 66, ../sass/sl-components/_main-menu-desktop.scss */
+/* line 64, ../sass/sl-components/_main-menu-desktop.scss */
 ul.nice-menu li.active-trail {
   background-color: white !important;
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
 }
-/* line 70, ../sass/sl-components/_main-menu-desktop.scss */
+/* line 68, ../sass/sl-components/_main-menu-desktop.scss */
 ul.nice-menu li.active-trail a {
   color: black;
 }
 
-/* line 79, ../sass/sl-components/_main-menu-desktop.scss */
+/* line 77, ../sass/sl-components/_main-menu-desktop.scss */
 ul.nice-menu-down li.menuparent,
 ul.nice-menu-down li.menuparent:hover {
   background-color: transparent;
   background-image: none;
 }
 
-/* line 89, ../sass/sl-components/_main-menu-desktop.scss */
+/* line 87, ../sass/sl-components/_main-menu-desktop.scss */
 ul.nice-menu ul {
-  top: 44px;
-  top: 2.5rem;
+  top: 50px;
+  top: 3.125rem;
   border-top: 0;
   background-color: white;
 }
-/* line 98, ../sass/sl-components/_main-menu-desktop.scss */
+/* line 96, ../sass/sl-components/_main-menu-desktop.scss */
 ul.nice-menu ul li a {
   text-decoration: none;
   color: black;
@@ -3791,7 +3818,18 @@ ul.nice-menu ul li a:active {
     width: 100%;
   }
 
-  /* line 17, ../sass/sl-components/_main-menu-mobile.scss */
+  /* line 16, ../sass/sl-components/_main-menu-mobile.scss */
+  .responsive-menus.responsified span.toggler, .responsive-menus.responsified .responsive-menus-simple {
+    background: #d9d4d1;
+    box-shadow: 2px 2px 2px #c2bab5;
+    color: #333;
+  }
+  /* line 20, ../sass/sl-components/_main-menu-mobile.scss */
+  .responsive-menus.responsified span.toggler li a, .responsive-menus.responsified .responsive-menus-simple li a {
+    color: #333;
+  }
+
+  /* line 25, ../sass/sl-components/_main-menu-mobile.scss */
   .block-nice-menus {
     display: none;
   }
@@ -3832,14 +3870,12 @@ ul.nice-menu ul li a:active {
 }
 /* line 25, ../sass/sl-components/_ueber-uns.scss */
 .center-wrapper.one .panel-col-first .field-name-body p {
-  white-space: pre;
-  white-space: pre-wrap;
-  white-space: pre-line;
-  white-space: -pre-wrap;
-  white-space: -o-pre-wrap;
-  white-space: -moz-pre-wrap;
-  white-space: -hp-pre-wrap;
   word-wrap: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  -o-hyphens: auto;
+  hyphens: auto;
 }
 /* line 30, ../sass/sl-components/_ueber-uns.scss */
 .center-wrapper.one h2 {
@@ -3860,9 +3896,9 @@ ul.nice-menu ul li a:active {
 }
 /* line 50, ../sass/sl-components/_ueber-uns.scss */
 .center-wrapper.one .panel-panel .group-left img {
-  -moz-border-radius: 20px;
-  -webkit-border-radius: 20px;
-  border-radius: 20px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
 }
 /* line 54, ../sass/sl-components/_ueber-uns.scss */
 .center-wrapper.one .panel-panel .group-right {
@@ -3886,9 +3922,9 @@ ul.nice-menu ul li a:active {
 }
 /* line 83, ../sass/sl-components/_ueber-uns.scss */
 .center-wrapper.two .node img {
-  -moz-border-radius: 20px;
-  -webkit-border-radius: 20px;
-  border-radius: 20px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
 }
 /* line 88, ../sass/sl-components/_ueber-uns.scss */
 .center-wrapper.two .pane-node:nth-child(3) .node {
@@ -3975,7 +4011,17 @@ ul.nice-menu ul li a:active {
 ** added by criscom
 ** /wohnung/wohnung-1-4-zimmer-wohnung-4-er-wg
 */
-/* line 6, ../sass/sl-components/_wohnung.scss */
+/* line 7, ../sass/sl-components/_wohnung.scss */
+.flippy {
+  padding-left: 16px;
+  padding-left: 1rem;
+}
+/* line 10, ../sass/sl-components/_wohnung.scss */
+.flippy .prev {
+  padding-left: 0;
+}
+
+/* line 15, ../sass/sl-components/_wohnung.scss */
 h1.object-title {
   margin-top: 12px;
   margin-top: .75rem;
@@ -3983,36 +4029,36 @@ h1.object-title {
 }
 
 @media (min-width: 569px) {
-  /* line 27, ../sass/sl-components/_wohnung.scss */
+  /* line 36, ../sass/sl-components/_wohnung.scss */
   .node-wohnung .group-left {
     width: 68%;
   }
-  /* line 31, ../sass/sl-components/_wohnung.scss */
+  /* line 40, ../sass/sl-components/_wohnung.scss */
   .node-wohnung .group-right {
     width: 30%;
     margin-left: 2%;
   }
 }
 @media (max-width: 568px) {
-  /* line 39, ../sass/sl-components/_wohnung.scss */
+  /* line 48, ../sass/sl-components/_wohnung.scss */
   .node-wohnung .group-left {
     width: 100%;
   }
-  /* line 43, ../sass/sl-components/_wohnung.scss */
+  /* line 52, ../sass/sl-components/_wohnung.scss */
   .node-wohnung .group-right {
     width: 100%;
   }
 }
-/* line 48, ../sass/sl-components/_wohnung.scss */
+/* line 57, ../sass/sl-components/_wohnung.scss */
 .node-wohnung .group-left {
   float: left;
 }
-/* line 52, ../sass/sl-components/_wohnung.scss */
+/* line 61, ../sass/sl-components/_wohnung.scss */
 .node-wohnung .group-right {
   float: right;
 }
 
-/* line 81, ../sass/sl-components/_wohnung.scss */
+/* line 90, ../sass/sl-components/_wohnung.scss */
 .group-wrapper-info {
   margin: 24px 0 16px;
   margin: 1.5rem 0 1rem;
@@ -4021,19 +4067,19 @@ h1.object-title {
   border-top: 1px solid #777777;
   border-bottom: 1px solid #777777;
 }
-/* line 90, ../sass/sl-components/_wohnung.scss */
+/* line 99, ../sass/sl-components/_wohnung.scss */
 .group-wrapper-info .btn.availability,
 .group-wrapper-info .field-name-wohnung-provisionsfrei {
   display: inline-block;
 }
 
-/* line 97, ../sass/sl-components/_wohnung.scss */
+/* line 106, ../sass/sl-components/_wohnung.scss */
 .btn.availability {
   margin-right: 12px;
   margin-right: .75rem;
 }
 
-/* line 105, ../sass/sl-components/_wohnung.scss */
+/* line 114, ../sass/sl-components/_wohnung.scss */
 .Verfügbar .btn.availability {
   color: #fff;
   background-color: #5cb85c;
@@ -4059,12 +4105,12 @@ h1.object-title {
   color: #5cb85c;
   background-color: #fff;
 }
-/* line 108, ../sass/sl-components/_wohnung.scss */
+/* line 117, ../sass/sl-components/_wohnung.scss */
 .Verfügbar .btn.availability:hover {
   cursor: default;
 }
 
-/* line 116, ../sass/sl-components/_wohnung.scss */
+/* line 125, ../sass/sl-components/_wohnung.scss */
 .Nicht.verfügbar .btn.availability {
   color: #fff;
   background-color: #d9534f;
@@ -4090,17 +4136,17 @@ h1.object-title {
   color: #d9534f;
   background-color: #fff;
 }
-/* line 119, ../sass/sl-components/_wohnung.scss */
+/* line 128, ../sass/sl-components/_wohnung.scss */
 .Nicht.verfügbar .btn.availability:hover {
   cursor: default;
 }
 
-/* line 128, ../sass/sl-components/_wohnung.scss */
+/* line 137, ../sass/sl-components/_wohnung.scss */
 .field-name-wohnung-provisionsfrei .btn:hover {
   cursor: default;
 }
 
-/* line 134, ../sass/sl-components/_wohnung.scss */
+/* line 143, ../sass/sl-components/_wohnung.scss */
 ul.field-slideshow-pager {
   margin-bottom: 24px;
   margin-bottom: 1.5rem;
@@ -4124,38 +4170,38 @@ ul.field-slideshow-pager li {
   list-style-type: none;
   margin-left: 0;
 }
-/* line 142, ../sass/sl-components/_wohnung.scss */
+/* line 151, ../sass/sl-components/_wohnung.scss */
 ul.field-slideshow-pager li {
   margin-bottom: 5px;
   margin-bottom: .3125rem;
 }
 
-/* line 149, ../sass/sl-components/_wohnung.scss */
+/* line 158, ../sass/sl-components/_wohnung.scss */
 .wrapper {
   clear: both;
   margin: 16px 0;
   margin: 1rem 0;
 }
 
-/* line 157, ../sass/sl-components/_wohnung.scss */
+/* line 166, ../sass/sl-components/_wohnung.scss */
 .suffix {
   font-size: 13.28px;
   font-style: italic;
 }
 
-/* line 165, ../sass/sl-components/_wohnung.scss */
+/* line 174, ../sass/sl-components/_wohnung.scss */
 .field-name-wohnung-wohnung-anfragen h2 {
   margin-top: 0;
 }
 
-/* line 173, ../sass/sl-components/_wohnung.scss */
+/* line 182, ../sass/sl-components/_wohnung.scss */
 .webform-component label {
   font-size: 14px;
   font-size: .875rem;
   font-style: italic;
   color: #777777;
 }
-/* line 184, ../sass/sl-components/_wohnung.scss */
+/* line 193, ../sass/sl-components/_wohnung.scss */
 .webform-component input,
 .webform-component textarea {
   border: 1px solid #e2e2e2;
@@ -4163,7 +4209,7 @@ ul.field-slideshow-pager li {
   box-shadow: #eee 0px 0px 10px inset;
 }
 
-/* line 195, ../sass/sl-components/_wohnung.scss */
+/* line 204, ../sass/sl-components/_wohnung.scss */
 .node-wohnung .field-name-field-page-reference {
   margin-top: 24px;
   margin-top: 1.5rem;
@@ -4171,12 +4217,12 @@ ul.field-slideshow-pager li {
   padding-top: 1rem;
   border-top: 1px solid #777777;
 }
-/* line 203, ../sass/sl-components/_wohnung.scss */
+/* line 212, ../sass/sl-components/_wohnung.scss */
 .node-wohnung .field-name-field-page-reference h2 {
   margin-top: 0;
 }
 
-/* line 210, ../sass/sl-components/_wohnung.scss */
+/* line 219, ../sass/sl-components/_wohnung.scss */
 .field-name-field-text-links ul {
   display: -webkit-flex;
   -webkit-flex-flow: row wrap;
@@ -4185,7 +4231,7 @@ ul.field-slideshow-pager li {
   flex-flow: row wrap;
   justy-content: space-around;
 }
-/* line 216, ../sass/sl-components/_wohnung.scss */
+/* line 225, ../sass/sl-components/_wohnung.scss */
 .field-name-field-text-links ul li {
   width: 250px;
 }

@@ -13,6 +13,14 @@
         width: $zen-grid-width;
     }
     .responsive-menus.responsified {
+        span.toggler, .responsive-menus-simple {
+            background: $header-color;
+            box-shadow: 2px 2px 2px darken($header-color, 10%);
+            color: #333;
+            li a {
+                color: #333;
+            }
+        }
     }
     .block-nice-menus
     {

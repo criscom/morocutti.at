@@ -23,7 +23,7 @@
         margin-right: 2%;
         .field-name-body {
             p {
-                @include force-wrap;
+                @include hyphens;
             }
         }
     }
@@ -48,7 +48,7 @@
             width: 30%;
             margin-right: 4%;
             img {
-                @include border-radius(20px);
+                @include border-radius(4px);
             }
         }
         .group-right
@@ -81,7 +81,7 @@
     {
         @extend %divider-node; // separates stacked nodes with a border
         img {
-            @include border-radius(20px);
+            @include border-radius(4px);
         }
     }
     

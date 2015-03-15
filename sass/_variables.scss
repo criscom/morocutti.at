@@ -98,6 +98,8 @@ $tahoma:          Tahoma, Verdana, "DejaVu Sans", sans-serif;
 $helvetica:       Helvetica, Arial, "Nimbus Sans L", sans-serif;
 $arial:           Arial, Helvetica, "Nimbus Sans L", sans-serif;
 
+$opensans:        'Open Sans', Arial, sans-serif;
+
 // Monospace font stacks.
 // For an explanation of why "sans-serif" is at the end of this list, see
 // http://meyerweb.com/eric/thoughts/2010/02/12/fixed-monospace-sizing/
@@ -121,6 +123,7 @@ $white-space-rem: 1.5rem;
 $yellow: rgb(255,255,0);
 $red: rgb(255,0,0);
 $black: #231f20;
+$header-color: #d9d4d1;
 
 //
 // Breakpoints
@@ -135,12 +138,14 @@ $xlarge: min-width 1200px;
 $xxlarge: min-width 1500px;
 
 // Helper max
+$max1044: max-width 1044px;
 $max979: max-width 979px; // smallscreens
 $max768: max-width 768px; // mobilescreens
 $max568: max-width 568px;
 
 // Ranges
 $range980-1199: 980px 1199px;
+$range769-1044: 769px 1044px;
 $range769-979: 769px 979px;
 $range569-768: 569px 768px;
 $range481-568: 481px 568px;

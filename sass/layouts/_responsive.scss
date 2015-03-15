@@ -69,6 +69,9 @@ $zen-auto-include-grid-item-base: false;
       padding-top: 24px;
       padding-top: 1.5rem;
     // }
+    @include breakpoint($range769-1044) {
+      padding-top: $nav-height;
+    }
     @include breakpoint($max768) {
       padding-top: $nav-height;
     }
@@ -79,19 +82,21 @@ $zen-auto-include-grid-item-base: false;
     height: $nav-height;
     // width: $zen-grid-width;
     left: 0;
-    top: 64px;
-    
-    @include breakpoint($desktop) {
-      left: 0px;
-      top: 48px;
+    top: 72px;
+    top: 4.5rem;
+    @include breakpoint($range769-1044) {
+      width: $zen-grid-width;
+      background-color: $header-color;
+      padding-top: 8px;
+      padding-top: .5rem;
     }
-    @include breakpoint($large) {
-      left: 330px;
-      top: 11px;
+    @media (min-width:1095px){
+      left: 390px;
+      top: 20px;
     }
-    @media (min-width:980px) and (max-width:1080px) {
-      left: 260px !important;
-      top: 11px;
+    @media (min-width:1045px) and (max-width:1094px) {
+      left: 380px !important;
+      top: 20px;
     }
   }
 
