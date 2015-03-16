@@ -5,6 +5,11 @@
 **
 */
 .page-unternehmensberatung .panel-2col-stacked {
+             .field-name-field-image {
+            img {
+                @include border-radius(4px);
+            }
+        }
     .panel-col-top,
     .center-wrapper .panel-col-first,
     .center-wrapper .panel-col-last {
