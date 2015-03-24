@@ -3402,8 +3402,8 @@ h1.object-title:hover,
 /* line 8, ../sass/sl-components/_footer.scss */
 footer {
   background-color: #d9d4d1;
-  margin: 16px 0;
-  margin: 1rem 0;
+  margin: 24px 0 16px 0;
+  margin: 1.5rem 0 1rem 0;
   border-radius: 4px;
 }
 /* line 13, ../sass/sl-components/_footer.scss */
