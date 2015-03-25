@@ -8,7 +8,7 @@
 
 .front {
     .panel-2col {
-        @include breakpoint($range769-1044) {
+        @include breakpoint($desktop) {
             margin-top: 24px;
             margin-top: 1.5rem;
         }
@@ -25,8 +25,8 @@
         }
         .panel-col-first {
             .panel-pane {
-                float: left;
-                width: 49%;
+                // float: left;
+                // width: 49%;
                 @include breakpoint($iphone5-6)
                 {
                     float: none;
@@ -34,7 +34,7 @@
                 }
             }
             .pane-block {
-                margin-left: 2%;
+                // margin-left: 2%;
                 background-color: $header-color;
                 @include border-radius(4px);
                 @include breakpoint($iphone5-6)
@@ -53,6 +53,8 @@
 .front {
     .flexslider {
         background: transparent;
+        margin-bottom: 24px;
+        margin-bottom: 1.5rem;
         h2 {
             margin-bottom: 24px !important;
             margin-bottom: 1.5rem !important;
@@ -69,6 +71,15 @@
         }
         .miete-label, .miete {
             @extend %medium-font-weight;
+        }
+        .object {
+            @extend %bold-font-weight;
+            margin-right: 6px;
+            margin-right: .375rem;
+        }
+        .link {
+            margin-left: 6px;
+            margin-left: .375rem;
         }
         .wohnungsdetails-link {
             margin: 24px 0;

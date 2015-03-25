@@ -21,6 +21,9 @@
     }
     .panel-col-first {
         margin-right: 2%;
+    }
+    .panel-col-first,
+    .panel-col-last {
         .field-name-body {
             p {
                 @include hyphens;
@@ -85,7 +88,7 @@
         }
     }
     
-    .pane-node:nth-child(3) .node {
+    .pane-node:nth-child(4) .node {
         border: 0;
         margin-bottom: 0;
         padding-bottom: 0;

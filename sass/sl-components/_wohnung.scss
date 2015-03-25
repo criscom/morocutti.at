@@ -169,6 +169,29 @@ ul.field-slideshow-pager
     font-style: italic;
 }
 
+.energieausweis,
+.raeume {
+    .inline p:first-child {
+    margin-top: 0;
+    }
+}
+
+.dokument {
+    @include clearfix;
+    .file {
+        // float: left;
+        img {
+            display: none;
+        }
+        a {
+            text-decoration: underline;
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+}
+
 .field-name-wohnung-wohnung-anfragen
 {
     h2

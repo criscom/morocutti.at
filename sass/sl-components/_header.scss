@@ -21,8 +21,12 @@ header.header {
     span {
     font-family: $opensans;
     font-size: 1.5 * $h1-font-size;
+    @extend %bold-font-weight;
     padding-left: 16px;
     padding-left: 1rem;
+    @include breakpoint($range0-480) {
+        font-size: $h1-font-size;
+    }
 
     }
 }
