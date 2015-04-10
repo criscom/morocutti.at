@@ -1375,11 +1375,10 @@ th {
   position: absolute;
   height: 3em;
   left: 0;
-  top: 72px;
-  top: 4.5rem;
-  -moz-border-radius: 4px;
-  -webkit-border-radius: 4px;
-  border-radius: 4px;
+  top: 60px;
+  top: 3.75rem;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
 }
 @media (min-width: 769px) {
   /* line 82, ../sass/layouts/_responsive.scss */
@@ -3238,7 +3237,7 @@ li a,
 }
 
 /* line 20, ../sass/library/_placeholders.scss */
-.front .flexslider .object, .front .flexslider-events .object, .header__site-link span, .node-wohnung .label-inline,
+.front .flexslider .object, .front .flexslider-events .object, .header__site-link span, .view-mietwohnungen-landing-page .views-row .Verfügbar, .node-wohnung .label-inline,
 .node-wohnung .label-above {
   font-weight: 700;
 }
@@ -3323,6 +3322,12 @@ li a,
 /* line 6, ../sass/sl-components/_default.scss */
 .main h1 {
   text-transform: uppercase;
+}
+
+/* line 10, ../sass/sl-components/_default.scss */
+.fa-angle-right {
+  margin-left: 8px;
+  margin-left: .5rem;
 }
 
 /* CSS code for the fonts integration
@@ -3453,6 +3458,8 @@ footer a:active {
 }
 /* line 36, ../sass/sl-components/_front.scss */
 .front .center-wrapper.one .panel-col-first .pane-block {
+  padding: 8px 0;
+  padding: .5rem 0;
   background-color: #d9d4d1;
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
@@ -3466,20 +3473,60 @@ footer a:active {
     margin-left: 0 !important;
   }
 }
+/* line 52, ../sass/sl-components/_front.scss */
+.front .center-wrapper.one .panel-col-last .panel-pane .node-page.view-mode-view_mode_4 {
+  padding: 8px 0;
+  padding: .5rem 0;
+  background-color: #d9d4d1;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+}
+/* line 57, ../sass/sl-components/_front.scss */
+.front .center-wrapper.one .panel-col-last .panel-pane .node-page.view-mode-view_mode_4 p {
+  margin-top: 0;
+  text-align: center;
+  background-color: #f5f5f5;
+}
 
-/* line 54, ../sass/sl-components/_front.scss */
+/* line 70, ../sass/sl-components/_front.scss */
+.view-mietwohnungen-landing-page h3,
+.front .node-page.view-mode-view_mode_4 h3 {
+  text-align: center;
+  margin: 8px 0;
+  margin: .5rem 0;
+}
+/* line 76, ../sass/sl-components/_front.scss */
+.view-mietwohnungen-landing-page .view-empty p,
+.front .node-page.view-mode-view_mode_4 .view-empty p {
+  margin-top: 0;
+  text-align: center;
+  background-color: #f5f5f5;
+}
+
+/* line 87, ../sass/sl-components/_front.scss */
 .front .flexslider, .front .flexslider-events {
   background: transparent;
   margin-bottom: 24px;
   margin-bottom: 1.5rem;
 }
-/* line 58, ../sass/sl-components/_front.scss */
+/* line 91, ../sass/sl-components/_front.scss */
+.front .flexslider .flex-direction-nav, .front .flexslider-events .flex-direction-nav,
+.front .flexslider .flex-next,
+.front .flexslider-events .flex-next {
+  display: none;
+}
+/* line 95, ../sass/sl-components/_front.scss */
+.front .flexslider .views-row-odd, .front .flexslider-events .views-row-odd {
+  background-color: #f5f5f5;
+}
+/* line 98, ../sass/sl-components/_front.scss */
 .front .flexslider h2, .front .flexslider-events h2 {
   margin-bottom: 24px !important;
   margin-bottom: 1.5rem !important;
   text-align: center;
 }
-/* line 63, ../sass/sl-components/_front.scss */
+/* line 103, ../sass/sl-components/_front.scss */
 .front .flexslider img, .front .flexslider-events img {
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
@@ -3487,33 +3534,33 @@ footer a:active {
   margin-bottom: 24px !important;
   margin-bottom: 1.5rem !important;
 }
-/* line 68, ../sass/sl-components/_front.scss */
+/* line 108, ../sass/sl-components/_front.scss */
 .front .flexslider .miete-wrapper, .front .flexslider-events .miete-wrapper {
   margin-bottom: 24px;
   margin-bottom: 24px;
 }
-/* line 75, ../sass/sl-components/_front.scss */
+/* line 115, ../sass/sl-components/_front.scss */
 .front .flexslider .object, .front .flexslider-events .object {
   margin-right: 6px;
   margin-right: .375rem;
 }
-/* line 80, ../sass/sl-components/_front.scss */
+/* line 120, ../sass/sl-components/_front.scss */
 .front .flexslider .link, .front .flexslider-events .link {
   margin-left: 6px;
   margin-left: .375rem;
 }
-/* line 84, ../sass/sl-components/_front.scss */
+/* line 124, ../sass/sl-components/_front.scss */
 .front .flexslider .wohnungsdetails-link, .front .flexslider-events .wohnungsdetails-link {
   margin: 24px 0;
   margin: 1.5rem 0;
 }
-/* line 88, ../sass/sl-components/_front.scss */
+/* line 128, ../sass/sl-components/_front.scss */
 .front .flexslider .padding-front, .front .flexslider-events .padding-front {
   padding: 0 16px;
   padding: 0 1rem;
 }
 
-/* line 98, ../sass/sl-components/_front.scss */
+/* line 138, ../sass/sl-components/_front.scss */
 .front .field-name-field-image img {
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
@@ -3530,34 +3577,34 @@ footer a:active {
   display: table;
   clear: both;
 }
-/* line 104, ../sass/sl-components/_front.scss */
+/* line 144, ../sass/sl-components/_front.scss */
 .front .center-wrapper.two .panel-col-first {
   width: 49%;
 }
 @media (max-width: 767px) {
-  /* line 104, ../sass/sl-components/_front.scss */
+  /* line 144, ../sass/sl-components/_front.scss */
   .front .center-wrapper.two .panel-col-first {
     width: 100%;
   }
 }
-/* line 111, ../sass/sl-components/_front.scss */
+/* line 151, ../sass/sl-components/_front.scss */
 .front .center-wrapper.two .panel-col-last {
   width: 49%;
   margin-left: 2%;
 }
 @media (max-width: 767px) {
-  /* line 111, ../sass/sl-components/_front.scss */
+  /* line 151, ../sass/sl-components/_front.scss */
   .front .center-wrapper.two .panel-col-last {
     width: 100%;
     margin-left: 0;
   }
 }
-/* line 120, ../sass/sl-components/_front.scss */
+/* line 160, ../sass/sl-components/_front.scss */
 .front .center-wrapper.two .node {
   margin-bottom: 0;
   border: 0;
 }
-/* line 124, ../sass/sl-components/_front.scss */
+/* line 164, ../sass/sl-components/_front.scss */
 .front .center-wrapper.two .node .field-name-body a.more-link {
   display: block;
   text-align: left;
@@ -3574,9 +3621,8 @@ footer a:active {
 /* line 9, ../sass/sl-components/_header.scss */
 header.header {
   background-color: #d9d4d1;
-  -moz-border-radius: 4px;
-  -webkit-border-radius: 4px;
-  border-radius: 4px;
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
   padding: 8px 0 0 0;
   padding: 0.5rem 0 0 0;
 }
@@ -3678,12 +3724,12 @@ header.header {
   text-align: center;
 }
 
-/* line 81, ../sass/sl-components/_immobilien-landing-page.scss */
+/* line 86, ../sass/sl-components/_immobilien-landing-page.scss */
 h2.wohnung {
   text-align: center;
   background-color: #8f8f8f;
 }
-/* line 87, ../sass/sl-components/_immobilien-landing-page.scss */
+/* line 92, ../sass/sl-components/_immobilien-landing-page.scss */
 h2.wohnung a {
   font-size: 18.72px;
   color: white;
@@ -3701,7 +3747,7 @@ h2.wohnung a:active {
   color: white;
 }
 
-/* line 98, ../sass/sl-components/_immobilien-landing-page.scss */
+/* line 103, ../sass/sl-components/_immobilien-landing-page.scss */
 .page-mietwohnungen .panel-2col-stacked .center-wrapper .view .view-content {
   display: -webkit-flex;
   -webkit-flex-flow: row wrap;
@@ -3710,7 +3756,7 @@ h2.wohnung a:active {
   flex-flow: row wrap;
   justy-content: space-around;
 }
-/* line 105, ../sass/sl-components/_immobilien-landing-page.scss */
+/* line 110, ../sass/sl-components/_immobilien-landing-page.scss */
 .page-mietwohnungen .panel-2col-stacked .center-wrapper .view .view-content .views-row {
   width: 100%;
   background-color: #d9d4d1;
@@ -3718,47 +3764,51 @@ h2.wohnung a:active {
   border-top-right-radius: 4px;
 }
 @media (min-width: 769px) {
-  /* line 105, ../sass/sl-components/_immobilien-landing-page.scss */
+  /* line 110, ../sass/sl-components/_immobilien-landing-page.scss */
   .page-mietwohnungen .panel-2col-stacked .center-wrapper .view .view-content .views-row {
     width: 49%;
   }
 }
 @media (min-width: 1200px) {
-  /* line 105, ../sass/sl-components/_immobilien-landing-page.scss */
+  /* line 110, ../sass/sl-components/_immobilien-landing-page.scss */
   .page-mietwohnungen .panel-2col-stacked .center-wrapper .view .view-content .views-row {
     width: 265px;
   }
 }
 @media (min-width: 769px) {
-  /* line 121, ../sass/sl-components/_immobilien-landing-page.scss */
+  /* line 126, ../sass/sl-components/_immobilien-landing-page.scss */
   .page-mietwohnungen .panel-2col-stacked .center-wrapper .view .view-content .views-row-odd {
     margin-right: 2%;
   }
 }
 @media (min-width: 1200px) {
-  /* line 121, ../sass/sl-components/_immobilien-landing-page.scss */
+  /* line 126, ../sass/sl-components/_immobilien-landing-page.scss */
   .page-mietwohnungen .panel-2col-stacked .center-wrapper .view .view-content .views-row-odd {
     margin-right: 16px;
     margin-right: 1rem;
   }
 }
-/* line 131, ../sass/sl-components/_immobilien-landing-page.scss */
-.page-mietwohnungen .panel-2col-stacked .center-wrapper .view .view-content .views-row .wohnungsdetails {
+/* line 136, ../sass/sl-components/_immobilien-landing-page.scss */
+.page-mietwohnungen .panel-2col-stacked .center-wrapper .view .view-content .views-row .wohnungsdetails,
+.page-mietwohnungen .panel-2col-stacked .center-wrapper .view .view-content .views-row .verfuegbarkeit {
   text-align: center;
+}
+/* line 140, ../sass/sl-components/_immobilien-landing-page.scss */
+.page-mietwohnungen .panel-2col-stacked .center-wrapper .view .view-content .views-row .verfuegbarkeit {
   margin-bottom: 16px;
   margin-bottom: 1rem;
 }
-/* line 136, ../sass/sl-components/_immobilien-landing-page.scss */
+/* line 144, ../sass/sl-components/_immobilien-landing-page.scss */
 .page-mietwohnungen .panel-2col-stacked .center-wrapper .view .view-content .views-row .views-field-field-bilder {
   text-align: center;
 }
-/* line 139, ../sass/sl-components/_immobilien-landing-page.scss */
+/* line 147, ../sass/sl-components/_immobilien-landing-page.scss */
 .page-mietwohnungen .panel-2col-stacked .center-wrapper .view .view-content .views-row .wohnungsdetails-link {
   margin-top: 16px;
   margin-top: 1rem;
   text-align: center;
 }
-/* line 144, ../sass/sl-components/_immobilien-landing-page.scss */
+/* line 152, ../sass/sl-components/_immobilien-landing-page.scss */
 .page-mietwohnungen .panel-2col-stacked .center-wrapper .view .view-content .views-row img {
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
@@ -4397,9 +4447,10 @@ ul.field-slideshow-pager li {
   font-style: italic;
 }
 
-/* line 174, ../sass/sl-components/_wohnung.scss */
+/* line 175, ../sass/sl-components/_wohnung.scss */
 .energieausweis .inline p:first-child,
-.raeume .inline p:first-child {
+.raeume .inline p:first-child,
+.raumausstattung .inline p:first-child {
   margin-top: 0;
 }
 
@@ -4414,32 +4465,32 @@ ul.field-slideshow-pager li {
   display: table;
   clear: both;
 }
-/* line 183, ../sass/sl-components/_wohnung.scss */
+/* line 184, ../sass/sl-components/_wohnung.scss */
 .dokument .file img {
   display: none;
 }
-/* line 186, ../sass/sl-components/_wohnung.scss */
+/* line 187, ../sass/sl-components/_wohnung.scss */
 .dokument .file a {
   text-decoration: underline;
 }
-/* line 188, ../sass/sl-components/_wohnung.scss */
+/* line 189, ../sass/sl-components/_wohnung.scss */
 .dokument .file a:hover {
   text-decoration: none;
 }
 
-/* line 197, ../sass/sl-components/_wohnung.scss */
+/* line 198, ../sass/sl-components/_wohnung.scss */
 .field-name-wohnung-wohnung-anfragen h2 {
   margin-top: 0;
 }
 
-/* line 205, ../sass/sl-components/_wohnung.scss */
+/* line 206, ../sass/sl-components/_wohnung.scss */
 .webform-component label {
   font-size: 14px;
   font-size: .875rem;
   font-style: italic;
   color: #777777;
 }
-/* line 216, ../sass/sl-components/_wohnung.scss */
+/* line 217, ../sass/sl-components/_wohnung.scss */
 .webform-component input,
 .webform-component textarea {
   border: 1px solid #e2e2e2;
@@ -4447,7 +4498,7 @@ ul.field-slideshow-pager li {
   box-shadow: #eee 0px 0px 10px inset;
 }
 
-/* line 227, ../sass/sl-components/_wohnung.scss */
+/* line 228, ../sass/sl-components/_wohnung.scss */
 .node-wohnung .field-name-field-page-reference {
   margin-top: 24px;
   margin-top: 1.5rem;
@@ -4455,12 +4506,12 @@ ul.field-slideshow-pager li {
   padding-top: 1rem;
   border-top: 1px solid #777777;
 }
-/* line 235, ../sass/sl-components/_wohnung.scss */
+/* line 236, ../sass/sl-components/_wohnung.scss */
 .node-wohnung .field-name-field-page-reference h2 {
   margin-top: 0;
 }
 
-/* line 242, ../sass/sl-components/_wohnung.scss */
+/* line 243, ../sass/sl-components/_wohnung.scss */
 .field-name-field-text-links ul {
   display: -webkit-flex;
   -webkit-flex-flow: row wrap;
@@ -4469,7 +4520,7 @@ ul.field-slideshow-pager li {
   flex-flow: row wrap;
   justy-content: space-around;
 }
-/* line 248, ../sass/sl-components/_wohnung.scss */
+/* line 249, ../sass/sl-components/_wohnung.scss */
 .field-name-field-text-links ul li {
   width: 250px;
 }

@@ -62,6 +62,9 @@ fonts[google_fonts_api][] = "Open Sans&subset=latin#600"
 
 ;styles[all][] = ../../libraries/flexslider/flexslider.css
 
+; Styles for Font Aweseome
+stylesheets[all][] = css/font-awesome/font-awesome.css
+
 ; Styles for bootstrap menu
 stylesheets[all][] = css/bootstrap/bootstrap.min.css
 ;stylesheets[all][] = css/bootstrap/jquery.smartmenus.bootstrap.css

@@ -35,6 +35,8 @@
             }
             .pane-block {
                 // margin-left: 2%;
+                padding: 8px 0;
+                padding: .5rem 0;
                 background-color: $header-color;
                 @include border-radius(4px);
                 @include breakpoint($iphone5-6)
@@ -44,6 +46,37 @@
                     margin-left: 0 !important;
                     }
             }
+        }
+        .panel-col-last {
+            .panel-pane {
+                .node-page.view-mode-view_mode_4 {
+                    padding: 8px 0;
+                    padding: .5rem 0;
+                    background-color: $header-color;
+                    @include border-radius(4px);
+                    p {
+                        margin-top: 0;
+                        text-align: center;
+                        background-color: $breadcrumb-bg;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.view-mietwohnungen-landing-page,
+.front .node-page.view-mode-view_mode_4 {
+    h3 {
+        text-align: center;
+        margin: 8px 0;
+        margin: .5rem 0;
+    }
+    .view-empty {
+        p {
+            margin-top: 0;
+            text-align: center;
+            background-color: $breadcrumb-bg;
         }
     }
 }
@@ -55,6 +88,13 @@
         background: transparent;
         margin-bottom: 24px;
         margin-bottom: 1.5rem;
+        .flex-direction-nav, 
+        .flex-next {
+            display: none;
+        }
+        .views-row-odd {
+            background-color: $breadcrumb-bg;
+        }
         h2 {
             margin-bottom: 24px !important;
             margin-bottom: 1.5rem !important;

@@ -76,6 +76,11 @@
     .view-header p {
         text-align: center;
     }
+    .views-row {
+        .Verfügbar {
+            @extend %bold-font-weight;
+        }
+    }
 }
 
 h2.wohnung
@@ -128,8 +133,11 @@ h2.wohnung
                     margin-right: 1rem;
                 }
             }
-            .wohnungsdetails {
+            .wohnungsdetails,
+            .verfuegbarkeit {
                 text-align: center;
+            }
+            .verfuegbarkeit {
                 margin-bottom: 16px;
                 margin-bottom: 1rem;
             }
