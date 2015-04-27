@@ -58,7 +58,7 @@ ul.nice-menu li
         text-transform: uppercase;
 
         @extend %base-font-size;
-        @include link-colors($normal: $black, $hover: $brand-primary !important);
+        @include link-colors($normal: $black, $hover: white !important);
         @extend %base-font-weight;
         // padding-right: 0 !important;
         @include breakpoint($range769-961) {

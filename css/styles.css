@@ -3930,7 +3930,7 @@ ul.nice-menu li a {
 }
 /* line 13, ../sass/library/_link.scss */
 ul.nice-menu li a:hover {
-  color: #d9d4d1 !important;
+  color: white !important;
 }
 /* line 14, ../sass/library/_link.scss */
 ul.nice-menu li a:visited {
