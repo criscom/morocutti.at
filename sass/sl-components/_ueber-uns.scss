@@ -87,7 +87,7 @@
             @include border-radius(4px);
         }
     }
-    
+    .panel-col-last .node, // hide border below Kontakt
     .pane-node:nth-child(4) .node {
         border: 0;
         margin-bottom: 0;

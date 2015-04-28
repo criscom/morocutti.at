@@ -28,7 +28,7 @@ ul.nice-menu li
     background-color: transparent;
     // background-color: white;
     padding-top: 8px;
-    padding-bottom: 10px;
+    padding-bottom: 12px;
     @include breakpoint($range769-961) {
         padding-bottom: 14px;
     }
@@ -55,7 +55,7 @@ ul.nice-menu li
     a
     {
         text-decoration: none;
-        text-transform: uppercase;
+        // text-transform: uppercase;
 
         @extend %base-font-size;
         @include link-colors($normal: $black, $hover: white !important);
@@ -77,6 +77,9 @@ ul.nice-menu li
         a
             {
             color: black;
+            &:hover {
+                color: black !important;
+            }
             }
     }
 }

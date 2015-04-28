@@ -10,7 +10,7 @@
 {
     h2.pane-title {
         text-align: center;
-        text-transform: uppercase;
+        // text-transform: uppercase;
         margin-bottom: 16px;
         margin-bottom: 1rem;
         @extend %base-font-weight;
@@ -111,6 +111,9 @@ h2.wohnung
         {
             width: 100%;
             @include breakpoint($desktop) {
+                .ie1 & {
+                    float: left; // workaround for IE10, which does not supporting flexbox
+                }
             width: 49%;
              }
             @include breakpoint($xlarge) {

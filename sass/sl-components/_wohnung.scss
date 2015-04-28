@@ -12,6 +12,33 @@
     }
 }
 
+
+// cloned fields display handling
+.node-wohnung {
+    .mobile {
+        @include breakpoint($tablet) { // min-width: 569px;
+            display: none; // hide dynamic display suite fields in right column on desktop
+        }
+    }
+    .desktop {
+        @include breakpoint($max667) {
+            display: none; // hide standard fields for wohnfläche and zimmer on mobile devices
+        }
+    }
+}
+
+// style mobile fields
+
+.mobile {
+    >div {
+        display: inline;
+    }
+    &.gesamtmiete {
+        margin-bottom: 0;
+    }
+}
+
+
 h1.object-title
 {
     margin-top: 12px;
