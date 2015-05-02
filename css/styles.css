@@ -3244,12 +3244,11 @@ li a,
 }
 
 /* line 24, ../sass/library/_placeholders.scss */
-.page-mietwohnungen .panel-2col-stacked .panel-col-top,
+.center-wrapper.one .panel-col-first, .center-wrapper.one .panel-col-last, .page-mietwohnungen .panel-2col-stacked .panel-col-top,
 .page-mietwohnungen .panel-2col-stacked .center-wrapper .panel-col-first,
 .page-mietwohnungen .panel-2col-stacked .center-wrapper .panel-col-last, .page-metallbau .panel-2col-stacked .panel-col-top,
 .page-metallbau .panel-2col-stacked .center-wrapper .panel-col-first,
-.page-metallbau .panel-2col-stacked .center-wrapper .panel-col-last, .center-wrapper.one .panel-col-first,
-.center-wrapper.one .panel-col-last, .center-wrapper.two .panel-col-first, .center-wrapper.two .panel-col-last, .page-unternehmensberatung .panel-2col-stacked .panel-col-top,
+.page-metallbau .panel-2col-stacked .center-wrapper .panel-col-last, .center-wrapper.two .panel-col-first, .center-wrapper.two .panel-col-last, .page-unternehmensberatung .panel-2col-stacked .panel-col-top,
 .page-unternehmensberatung .panel-2col-stacked .center-wrapper .panel-col-first,
 .page-unternehmensberatung .panel-2col-stacked .center-wrapper .panel-col-last, .node-wohnung .group-top,
 .node-wohnung .group-left,
@@ -3274,7 +3273,7 @@ li a,
 }
 
 /* line 51, ../sass/library/_placeholders.scss */
-.front .center-wrapper.one .panel-panel, .page-mietwohnungen .panel-2col-stacked .panel-col-top, .page-metallbau .panel-2col-stacked .panel-col-top, .center-wrapper.one .panel-panel, .page-unternehmensberatung .panel-2col-stacked .panel-col-top, .node-wohnung .group-top {
+.center-wrapper.one .panel-panel, .page-mietwohnungen .panel-2col-stacked .panel-col-top, .page-metallbau .panel-2col-stacked .panel-col-top, .page-unternehmensberatung .panel-2col-stacked .panel-col-top, .node-wohnung .group-top {
   margin-bottom: 24px;
   margin-bottom: 1.5rem;
 }
@@ -3437,26 +3436,32 @@ footer a:active {
 .front .pane-title a:hover {
   text-decoration: none;
 }
+
 /* line 6, ../sass/library/_clearfix.scss */
-.front .center-wrapper.one .panel-panel:before {
+.center-wrapper.one .panel-panel:before {
   content: '';
   display: table;
 }
 /* line 11, ../sass/library/_clearfix.scss */
-.front .center-wrapper.one .panel-panel:after {
+.center-wrapper.one .panel-panel:after {
   content: '';
   display: table;
   clear: both;
 }
+/* line 44, ../sass/sl-components/_front.scss */
+.center-wrapper.one .panel-col-first {
+  float: left;
+  width: 49%;
+}
 @media (max-width: 767px) {
-  /* line 33, ../sass/sl-components/_front.scss */
-  .front .center-wrapper.one .panel-col-first .panel-pane {
+  /* line 44, ../sass/sl-components/_front.scss */
+  .center-wrapper.one .panel-col-first {
     float: none;
     width: 100%;
   }
 }
-/* line 42, ../sass/sl-components/_front.scss */
-.front .center-wrapper.one .panel-col-first .pane-block {
+/* line 53, ../sass/sl-components/_front.scss */
+.center-wrapper.one .panel-col-first .pane-block {
   padding: 8px 0;
   padding: .5rem 0;
   background-color: #d9d4d1;
@@ -3465,15 +3470,28 @@ footer a:active {
   border-radius: 4px;
 }
 @media (max-width: 767px) {
-  /* line 42, ../sass/sl-components/_front.scss */
-  .front .center-wrapper.one .panel-col-first .pane-block {
+  /* line 53, ../sass/sl-components/_front.scss */
+  .center-wrapper.one .panel-col-first .pane-block {
     float: none;
     width: 100%;
     margin-left: 0 !important;
   }
 }
-/* line 58, ../sass/sl-components/_front.scss */
-.front .center-wrapper.one .panel-col-last .panel-pane .node-page.view-mode-view_mode_4 {
+/* line 67, ../sass/sl-components/_front.scss */
+.center-wrapper.one .panel-col-last {
+  width: 49%;
+  margin-left: 2%;
+  float: left;
+}
+@media (max-width: 767px) {
+  /* line 67, ../sass/sl-components/_front.scss */
+  .center-wrapper.one .panel-col-last {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+/* line 78, ../sass/sl-components/_front.scss */
+.center-wrapper.one .panel-col-last .panel-pane .node-page.view-mode-view_mode_4 {
   padding: 8px 0;
   padding: .5rem 0;
   background-color: #d9d4d1;
@@ -3481,21 +3499,21 @@ footer a:active {
   -webkit-border-radius: 4px;
   border-radius: 4px;
 }
-/* line 63, ../sass/sl-components/_front.scss */
-.front .center-wrapper.one .panel-col-last .panel-pane .node-page.view-mode-view_mode_4 p {
+/* line 83, ../sass/sl-components/_front.scss */
+.center-wrapper.one .panel-col-last .panel-pane .node-page.view-mode-view_mode_4 p {
   margin-top: 0;
   text-align: center;
   background-color: #f5f5f5;
 }
 
-/* line 76, ../sass/sl-components/_front.scss */
+/* line 96, ../sass/sl-components/_front.scss */
 .view-mietwohnungen-landing-page h3,
 .front .node-page.view-mode-view_mode_4 h3 {
   text-align: center;
   margin: 8px 0;
   margin: .5rem 0;
 }
-/* line 84, ../sass/sl-components/_front.scss */
+/* line 104, ../sass/sl-components/_front.scss */
 .view-mietwohnungen-landing-page .view-empty p,
 .front .node-page.view-mode-view_mode_4 .view-empty p {
   margin-top: 0;
@@ -3503,33 +3521,33 @@ footer a:active {
   background-color: #f5f5f5;
 }
 
-/* line 95, ../sass/sl-components/_front.scss */
+/* line 115, ../sass/sl-components/_front.scss */
 .front .flexslider, .front .flexslider-events {
   background: transparent;
   margin-bottom: 24px;
   margin-bottom: 1.5rem;
 }
-/* line 99, ../sass/sl-components/_front.scss */
+/* line 119, ../sass/sl-components/_front.scss */
 .front .flexslider .flex-direction-nav, .front .flexslider-events .flex-direction-nav,
 .front .flexslider .flex-next,
 .front .flexslider-events .flex-next {
   display: none;
 }
-/* line 103, ../sass/sl-components/_front.scss */
+/* line 123, ../sass/sl-components/_front.scss */
 .front .flexslider .views-row-odd, .front .flexslider-events .views-row-odd {
   background-color: #f5f5f5;
 }
-/* line 106, ../sass/sl-components/_front.scss */
+/* line 126, ../sass/sl-components/_front.scss */
 .front .flexslider .wohnungsdetails, .front .flexslider-events .wohnungsdetails {
   text-align: center;
 }
-/* line 109, ../sass/sl-components/_front.scss */
+/* line 129, ../sass/sl-components/_front.scss */
 .front .flexslider h2, .front .flexslider-events h2 {
   margin-bottom: 24px !important;
   margin-bottom: 1.5rem !important;
   text-align: center;
 }
-/* line 114, ../sass/sl-components/_front.scss */
+/* line 134, ../sass/sl-components/_front.scss */
 .front .flexslider img, .front .flexslider-events img {
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
@@ -3537,33 +3555,33 @@ footer a:active {
   margin-bottom: 24px !important;
   margin-bottom: 1.5rem !important;
 }
-/* line 119, ../sass/sl-components/_front.scss */
+/* line 139, ../sass/sl-components/_front.scss */
 .front .flexslider .miete-wrapper, .front .flexslider-events .miete-wrapper {
   margin-bottom: 24px;
   margin-bottom: 24px;
 }
-/* line 126, ../sass/sl-components/_front.scss */
+/* line 146, ../sass/sl-components/_front.scss */
 .front .flexslider .object, .front .flexslider-events .object {
   margin-right: 6px;
   margin-right: .375rem;
 }
-/* line 131, ../sass/sl-components/_front.scss */
+/* line 151, ../sass/sl-components/_front.scss */
 .front .flexslider .link, .front .flexslider-events .link {
   margin-left: 6px;
   margin-left: .375rem;
 }
-/* line 135, ../sass/sl-components/_front.scss */
+/* line 155, ../sass/sl-components/_front.scss */
 .front .flexslider .wohnungsdetails-link, .front .flexslider-events .wohnungsdetails-link {
   margin: 24px 0;
   margin: 1.5rem 0;
 }
-/* line 139, ../sass/sl-components/_front.scss */
+/* line 159, ../sass/sl-components/_front.scss */
 .front .flexslider .padding-front, .front .flexslider-events .padding-front {
   padding: 0 16px;
   padding: 0 1rem;
 }
 
-/* line 149, ../sass/sl-components/_front.scss */
+/* line 169, ../sass/sl-components/_front.scss */
 .front .field-name-field-image img {
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
@@ -3580,34 +3598,35 @@ footer a:active {
   display: table;
   clear: both;
 }
-/* line 155, ../sass/sl-components/_front.scss */
+/* line 175, ../sass/sl-components/_front.scss */
 .front .center-wrapper.two .panel-col-first {
   width: 49%;
 }
 @media (max-width: 767px) {
-  /* line 155, ../sass/sl-components/_front.scss */
+  /* line 175, ../sass/sl-components/_front.scss */
   .front .center-wrapper.two .panel-col-first {
     width: 100%;
   }
 }
-/* line 162, ../sass/sl-components/_front.scss */
+/* line 182, ../sass/sl-components/_front.scss */
 .front .center-wrapper.two .panel-col-last {
   width: 49%;
   margin-left: 2%;
 }
 @media (max-width: 767px) {
-  /* line 162, ../sass/sl-components/_front.scss */
+  /* line 182, ../sass/sl-components/_front.scss */
   .front .center-wrapper.two .panel-col-last {
     width: 100%;
     margin-left: 0;
   }
 }
-/* line 171, ../sass/sl-components/_front.scss */
+/* line 191, ../sass/sl-components/_front.scss */
 .front .center-wrapper.two .node {
   margin-bottom: 0;
+  padding-bottom: 0;
   border: 0;
 }
-/* line 175, ../sass/sl-components/_front.scss */
+/* line 196, ../sass/sl-components/_front.scss */
 .front .center-wrapper.two .node .field-name-body a.more-link {
   display: block;
   text-align: left;
@@ -3707,12 +3726,10 @@ header.header {
     margin-bottom: 1.5rem;
   }
 }
-@media (min-width: 769px) {
-  /* line 60, ../sass/sl-components/_immobilien-landing-page.scss */
-  .page-mietwohnungen .panel-2col-stacked .center-wrapper .panel-col-last {
-    width: 49%;
-    margin-left: 2%;
-  }
+/* line 60, ../sass/sl-components/_immobilien-landing-page.scss */
+.page-mietwohnungen .panel-2col-stacked .center-wrapper .panel-col-last {
+  width: 49%;
+  margin-left: 2%;
 }
 @media (max-width: 767px) {
   /* line 60, ../sass/sl-components/_immobilien-landing-page.scss */
@@ -3721,17 +3738,17 @@ header.header {
   }
 }
 
-/* line 76, ../sass/sl-components/_immobilien-landing-page.scss */
+/* line 74, ../sass/sl-components/_immobilien-landing-page.scss */
 .view-mietwohnungen-landing-page .view-header p {
   text-align: center;
 }
 
-/* line 86, ../sass/sl-components/_immobilien-landing-page.scss */
+/* line 84, ../sass/sl-components/_immobilien-landing-page.scss */
 h2.wohnung {
   text-align: center;
   background-color: #8f8f8f;
 }
-/* line 92, ../sass/sl-components/_immobilien-landing-page.scss */
+/* line 90, ../sass/sl-components/_immobilien-landing-page.scss */
 h2.wohnung a {
   font-size: 18.72px;
   color: white;
@@ -3749,7 +3766,7 @@ h2.wohnung a:active {
   color: white;
 }
 
-/* line 103, ../sass/sl-components/_immobilien-landing-page.scss */
+/* line 101, ../sass/sl-components/_immobilien-landing-page.scss */
 .page-mietwohnungen .panel-2col-stacked .center-wrapper .view .view-content {
   display: -webkit-flex;
   -webkit-flex-flow: row wrap;
@@ -3758,7 +3775,7 @@ h2.wohnung a:active {
   flex-flow: row wrap;
   justy-content: space-around;
 }
-/* line 110, ../sass/sl-components/_immobilien-landing-page.scss */
+/* line 108, ../sass/sl-components/_immobilien-landing-page.scss */
 .page-mietwohnungen .panel-2col-stacked .center-wrapper .view .view-content .views-row {
   width: 100%;
   background-color: #d9d4d1;
@@ -3766,55 +3783,55 @@ h2.wohnung a:active {
   border-top-right-radius: 4px;
 }
 @media (min-width: 769px) {
-  /* line 110, ../sass/sl-components/_immobilien-landing-page.scss */
+  /* line 108, ../sass/sl-components/_immobilien-landing-page.scss */
   .page-mietwohnungen .panel-2col-stacked .center-wrapper .view .view-content .views-row {
     width: 49%;
   }
-  /* line 114, ../sass/sl-components/_immobilien-landing-page.scss */
+  /* line 112, ../sass/sl-components/_immobilien-landing-page.scss */
   .ie1 .page-mietwohnungen .panel-2col-stacked .center-wrapper .view .view-content .views-row {
     float: left;
   }
 }
 @media (min-width: 1200px) {
-  /* line 110, ../sass/sl-components/_immobilien-landing-page.scss */
+  /* line 108, ../sass/sl-components/_immobilien-landing-page.scss */
   .page-mietwohnungen .panel-2col-stacked .center-wrapper .view .view-content .views-row {
     width: 265px;
   }
 }
 @media (min-width: 769px) {
-  /* line 129, ../sass/sl-components/_immobilien-landing-page.scss */
+  /* line 127, ../sass/sl-components/_immobilien-landing-page.scss */
   .page-mietwohnungen .panel-2col-stacked .center-wrapper .view .view-content .views-row-odd {
     margin-right: 2%;
   }
 }
 @media (min-width: 1200px) {
-  /* line 129, ../sass/sl-components/_immobilien-landing-page.scss */
+  /* line 127, ../sass/sl-components/_immobilien-landing-page.scss */
   .page-mietwohnungen .panel-2col-stacked .center-wrapper .view .view-content .views-row-odd {
     margin-right: 16px;
     margin-right: 1rem;
   }
 }
-/* line 139, ../sass/sl-components/_immobilien-landing-page.scss */
+/* line 137, ../sass/sl-components/_immobilien-landing-page.scss */
 .page-mietwohnungen .panel-2col-stacked .center-wrapper .view .view-content .views-row .wohnungsdetails,
 .page-mietwohnungen .panel-2col-stacked .center-wrapper .view .view-content .views-row .verfuegbarkeit {
   text-align: center;
 }
-/* line 143, ../sass/sl-components/_immobilien-landing-page.scss */
+/* line 141, ../sass/sl-components/_immobilien-landing-page.scss */
 .page-mietwohnungen .panel-2col-stacked .center-wrapper .view .view-content .views-row .verfuegbarkeit {
   margin-bottom: 16px;
   margin-bottom: 1rem;
 }
-/* line 147, ../sass/sl-components/_immobilien-landing-page.scss */
+/* line 145, ../sass/sl-components/_immobilien-landing-page.scss */
 .page-mietwohnungen .panel-2col-stacked .center-wrapper .view .view-content .views-row .views-field-field-bilder {
   text-align: center;
 }
-/* line 150, ../sass/sl-components/_immobilien-landing-page.scss */
+/* line 148, ../sass/sl-components/_immobilien-landing-page.scss */
 .page-mietwohnungen .panel-2col-stacked .center-wrapper .view .view-content .views-row .wohnungsdetails-link {
   margin-top: 16px;
   margin-top: 1rem;
   text-align: center;
 }
-/* line 155, ../sass/sl-components/_immobilien-landing-page.scss */
+/* line 153, ../sass/sl-components/_immobilien-landing-page.scss */
 .page-mietwohnungen .panel-2col-stacked .center-wrapper .view .view-content .views-row img {
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
@@ -4106,29 +4123,7 @@ ul.nice-menu ul li a:active {
 ** /panel-two-two
 ** (Morocutti.at ==> Über uns)
 */
-/* line 6, ../sass/library/_clearfix.scss */
-.center-wrapper.one:before {
-  content: '';
-  display: table;
-}
-/* line 11, ../sass/library/_clearfix.scss */
-.center-wrapper.one:after {
-  content: '';
-  display: table;
-  clear: both;
-}
-@media (min-width: 980px) {
-  /* line 14, ../sass/sl-components/_ueber-uns.scss */
-  .center-wrapper.one .panel-col-first,
-  .center-wrapper.one .panel-col-last {
-    width: 49%;
-  }
-}
-/* line 22, ../sass/sl-components/_ueber-uns.scss */
-.center-wrapper.one .panel-col-first {
-  margin-right: 2%;
-}
-/* line 28, ../sass/sl-components/_ueber-uns.scss */
+/* line 16, ../sass/sl-components/_ueber-uns.scss */
 .center-wrapper.one .panel-col-first .field-name-body p,
 .center-wrapper.one .panel-col-last .field-name-body p {
   word-wrap: break-word;
@@ -4138,88 +4133,92 @@ ul.nice-menu ul li a:active {
   -o-hyphens: auto;
   hyphens: auto;
 }
-/* line 33, ../sass/sl-components/_ueber-uns.scss */
+@media (min-width: 768px) and (max-width: 768px) {
+  /* line 24, ../sass/sl-components/_ueber-uns.scss */
+  .center-wrapper.one .panel-col-last {
+    padding-bottom: 42px !important;
+  }
+}
+/* line 28, ../sass/sl-components/_ueber-uns.scss */
 .center-wrapper.one h2 {
   margin-top: 0;
   margin-bottom: 0;
 }
-@media (max-width: 979px) {
-  /* line 38, ../sass/sl-components/_ueber-uns.scss */
+@media (max-width: 568px) {
+  /* line 33, ../sass/sl-components/_ueber-uns.scss */
   .center-wrapper.one .panel-panel {
     float: none;
     width: 100%;
   }
 }
-/* line 49, ../sass/sl-components/_ueber-uns.scss */
+/* line 43, ../sass/sl-components/_ueber-uns.scss */
 .center-wrapper.one .panel-panel .group-left {
   width: 30%;
   margin-right: 4%;
 }
-/* line 53, ../sass/sl-components/_ueber-uns.scss */
+/* line 47, ../sass/sl-components/_ueber-uns.scss */
 .center-wrapper.one .panel-panel .group-left img {
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
   border-radius: 4px;
 }
-/* line 57, ../sass/sl-components/_ueber-uns.scss */
+/* line 51, ../sass/sl-components/_ueber-uns.scss */
 .center-wrapper.one .panel-panel .group-right {
   width: 66%;
 }
 
-/* line 68, ../sass/sl-components/_ueber-uns.scss */
+/* line 64, ../sass/sl-components/_ueber-uns.scss */
 .center-wrapper.two .field-name-title-field h2,
 .center-wrapper.two h2.pane-title.pane__title {
   margin-top: 0;
   margin-bottom: 0;
 }
-/* line 76, ../sass/sl-components/_ueber-uns.scss */
+/* line 72, ../sass/sl-components/_ueber-uns.scss */
 .center-wrapper.two .group-left {
   width: 34%;
   margin-right: 2%;
 }
-/* line 80, ../sass/sl-components/_ueber-uns.scss */
+/* line 76, ../sass/sl-components/_ueber-uns.scss */
 .center-wrapper.two .group-right {
   width: 64%;
 }
-/* line 86, ../sass/sl-components/_ueber-uns.scss */
+/* line 82, ../sass/sl-components/_ueber-uns.scss */
 .center-wrapper.two .node img {
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
   border-radius: 4px;
 }
-/* line 90, ../sass/sl-components/_ueber-uns.scss */
+/* line 86, ../sass/sl-components/_ueber-uns.scss */
 .center-wrapper.two .panel-col-last .node,
 .center-wrapper.two .pane-node:nth-child(4) .node {
   border: 0;
   margin-bottom: 0;
   padding-bottom: 0;
 }
-/* line 97, ../sass/sl-components/_ueber-uns.scss */
+/* line 93, ../sass/sl-components/_ueber-uns.scss */
 .center-wrapper.two .panel-col-first {
   width: 68%;
 }
 @media (max-width: 767px) {
-  /* line 97, ../sass/sl-components/_ueber-uns.scss */
+  /* line 93, ../sass/sl-components/_ueber-uns.scss */
   .center-wrapper.two .panel-col-first {
     width: 100%;
   }
 }
 @media (max-width: 768px) {
-  /* line 97, ../sass/sl-components/_ueber-uns.scss */
+  /* line 93, ../sass/sl-components/_ueber-uns.scss */
   .center-wrapper.two .panel-col-first {
     margin-bottom: 24px;
     margin-bottom: 1.5rem;
   }
 }
-@media (min-width: 769px) {
-  /* line 111, ../sass/sl-components/_ueber-uns.scss */
-  .center-wrapper.two .panel-col-last {
-    width: 30%;
-    margin-left: 2%;
-  }
+/* line 107, ../sass/sl-components/_ueber-uns.scss */
+.center-wrapper.two .panel-col-last {
+  width: 30%;
+  margin-left: 2%;
 }
 @media (max-width: 767px) {
-  /* line 111, ../sass/sl-components/_ueber-uns.scss */
+  /* line 107, ../sass/sl-components/_ueber-uns.scss */
   .center-wrapper.two .panel-col-last {
     width: 100%;
   }
@@ -4315,7 +4314,6 @@ ul.nice-menu ul li a:active {
 h1.object-title {
   margin-top: 12px;
   margin-top: .75rem;
-  text-transform: uppercase;
 }
 
 @media (min-width: 569px) {

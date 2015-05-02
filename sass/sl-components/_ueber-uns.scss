@@ -10,18 +10,6 @@
 // one col section above
 .center-wrapper.one
 {
-    @include clearfix;
-    .panel-col-first,
-    .panel-col-last {
-        @extend %base-background;
-        @include breakpoint($large) {
-            
-            width: 49%
-        }
-    }
-    .panel-col-first {
-        margin-right: 2%;
-    }
     .panel-col-first,
     .panel-col-last {
         .field-name-body {
@@ -30,6 +18,13 @@
             }
         }
     }
+    // adjust right team member box height for iPad portrait mode
+
+    @include breakpoint($range768) {
+    .panel-col-last {
+        padding-bottom: 42px !important;
+    }
+    }
     h2
     {
         margin-top: 0;
@@ -37,9 +32,8 @@
     }
     .panel-panel
     {
-        @extend %white-space;
 
-        @include breakpoint($max979)
+        @include breakpoint($max568)
         {
             float: none;
 
@@ -60,6 +54,8 @@
         }
     }
 }
+
+
 
 // two col section
 .center-wrapper.two
@@ -108,12 +104,9 @@
             margin-bottom: $white-space-rem;
      }
     }
-    .panel-col-last
-    {
-        @include breakpoint($desktop) {
-            width: 30%;
-            margin-left: 2%;
-    }
+    .panel-col-last {
+        width: 30%;
+        margin-left: 2%;
         @extend %base-background;
         @include breakpoint($iphone5-6)
         {

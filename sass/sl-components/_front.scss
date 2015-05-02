@@ -25,51 +25,71 @@
         }
     }
     .center-wrapper.one {
-        .panel-panel {
-            @include clearfix;
-            @extend %white-space;
-        }
-        .panel-col-first {
-            .panel-pane {
-                // float: left;
-                // width: 49%;
-                @include breakpoint($iphone5-6)
-                {
-                    float: none;
-                    width: 100%;
-                }
+        @include breakpoint($range768) { //adjust left box height for iPad portrait mode
+            .panel-col-first
+            {
+                // padding-bottom: 66px;
+                // padding-bottom: 4.125rem;
             }
-            .pane-block {
-                // margin-left: 2%;
+        }
+    }
+}
+
+// applies to frontpage and über uns
+.center-wrapper.one {
+    .panel-panel {
+        @include clearfix;
+        @extend %white-space;
+    }
+    .panel-col-first {
+        @extend %base-background;
+        float: left;
+        width: 49%;
+        @include breakpoint($iphone5-6)
+            {
+                float: none;
+                width: 100%;
+            }
+        .pane-block {
+            // margin-left: 2%;
+            padding: 8px 0;
+            padding: .5rem 0;
+            background-color: $header-color;
+            @include border-radius(4px);
+            @include breakpoint($iphone5-6)
+                {
+                float: none;
+                width: 100%;
+                margin-left: 0 !important;
+                }
+        }
+    }
+    .panel-col-last {
+        @extend %base-background;
+        width: 49%;
+        margin-left: 2%;
+        float: left;
+        @include breakpoint($iphone5-6)
+        {
+            width: 100%;
+            margin-left: 0;
+        }
+        .panel-pane {
+            .node-page.view-mode-view_mode_4 {
                 padding: 8px 0;
                 padding: .5rem 0;
                 background-color: $header-color;
                 @include border-radius(4px);
-                @include breakpoint($iphone5-6)
-                    {
-                    float: none;
-                    width: 100%;
-                    margin-left: 0 !important;
-                    }
-            }
-        }
-        .panel-col-last {
-            .panel-pane {
-                .node-page.view-mode-view_mode_4 {
-                    padding: 8px 0;
-                    padding: .5rem 0;
-                    background-color: $header-color;
-                    @include border-radius(4px);
-                    p {
-                        margin-top: 0;
-                        text-align: center;
-                        background-color: $breadcrumb-bg;
-                    }
+                p {
+                    margin-top: 0;
+                    text-align: center;
+                    background-color: $breadcrumb-bg;
                 }
             }
         }
     }
 }
+
 
 .view-mietwohnungen-landing-page,
 .front .node-page.view-mode-view_mode_4 {
@@ -170,6 +190,7 @@
         }
         .node {
             margin-bottom: 0;
+            padding-bottom: 0;
             border: 0;
             .field-name-body {
                 a.more-link {

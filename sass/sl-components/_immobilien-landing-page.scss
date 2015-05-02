@@ -59,10 +59,8 @@
         }
         .panel-col-last
         {
-            @include breakpoint($desktop) {
                 width: 49%;
                 margin-left: 2%;
-            }
 
             @include breakpoint($iphone5-6)
             {
