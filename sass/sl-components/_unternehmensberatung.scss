@@ -29,6 +29,8 @@
             @include breakpoint($iphone5-6)
             {
                 width: 100%;
+                margin-bottom: $white-space-px;
+                margin-bottom: $white-space-rem;
             }
         }
         .panel-col-last {
@@ -37,6 +39,7 @@
             @include breakpoint($iphone5-6)
             {
                 width: 100%;
+                margin-left: 0;
             }
         }
     }

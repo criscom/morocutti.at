@@ -4104,17 +4104,20 @@ ul.nice-menu ul li a:active {
   /* line 34, ../sass/sl-components/_metallbau.scss */
   .page-metallbau .panel-2col-stacked .center-wrapper .panel-col-first {
     width: 100%;
+    margin-bottom: 24px;
+    margin-bottom: 1.5rem;
   }
 }
-/* line 41, ../sass/sl-components/_metallbau.scss */
+/* line 43, ../sass/sl-components/_metallbau.scss */
 .page-metallbau .panel-2col-stacked .center-wrapper .panel-col-last {
   width: 30%;
   margin-left: 2%;
 }
 @media (max-width: 767px) {
-  /* line 41, ../sass/sl-components/_metallbau.scss */
+  /* line 43, ../sass/sl-components/_metallbau.scss */
   .page-metallbau .panel-2col-stacked .center-wrapper .panel-col-last {
     width: 100%;
+    margin-left: 0;
   }
 }
 
@@ -4261,17 +4264,20 @@ ul.nice-menu ul li a:active {
   /* line 27, ../sass/sl-components/_unternehmensberatung.scss */
   .page-unternehmensberatung .panel-2col-stacked .center-wrapper .panel-col-first {
     width: 100%;
+    margin-bottom: 24px;
+    margin-bottom: 1.5rem;
   }
 }
-/* line 34, ../sass/sl-components/_unternehmensberatung.scss */
+/* line 36, ../sass/sl-components/_unternehmensberatung.scss */
 .page-unternehmensberatung .panel-2col-stacked .center-wrapper .panel-col-last {
   width: 30%;
   margin-left: 2%;
 }
 @media (max-width: 767px) {
-  /* line 34, ../sass/sl-components/_unternehmensberatung.scss */
+  /* line 36, ../sass/sl-components/_unternehmensberatung.scss */
   .page-unternehmensberatung .panel-2col-stacked .center-wrapper .panel-col-last {
     width: 100%;
+    margin-left: 0;
   }
 }
 
