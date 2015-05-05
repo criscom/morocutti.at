@@ -173,6 +173,7 @@
     .center-wrapper.two {
         @include clearfix;
         .panel-col-first {
+            clear: both !important;
             width: 49%;
             @include breakpoint($iphone5-6)
             {
