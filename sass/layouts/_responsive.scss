@@ -87,7 +87,8 @@ $zen-auto-include-grid-item-base: false;
     left: 0;
     top: 60px;
     top: 3.75rem;
-    @include border-bottom-radius(4px);
+    // @include border-bottom-radius(4px); MOR-21 - morocutti logo block: hintergrund entfernen
+    @include border-radius(4px); // MOR-21 - morocutti logo block: hintergrund entfernen
     @include breakpoint($desktop) {
       width: $zen-grid-width;
       background-color: $header-color;

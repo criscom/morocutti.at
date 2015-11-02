@@ -7,7 +7,7 @@
 
 
 header.header {
-    background-color: $header-color;
+    // background-color: $header-color; MOR-21 - morocutti logo block: hintergrund entfernen
     @include border-top-radius(4px);
     padding: 8px 0 0 0;
     padding: 0.5rem 0 0 0;
