@@ -17,7 +17,7 @@ header.header {
 .header__site-link {
     &:hover {
         text-decoration: none;
-        color: white;
+        color: lighten($black, 20%);
     }
     span {
     font-family: $opensans;
